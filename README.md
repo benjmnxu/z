@@ -1,182 +1,153 @@
-# Twitter/X Scraper for Elon Musk
+# Multi-Handle AI Twitter Scraper
 
-A Python web scraper designed to extract tweets from a local Twitter/X instance running at `http://127.0.0.1:8080/elonmusk`. This tool extracts detailed tweet information including text content, media, statistics, quoted tweets, and metadata.
+An intelligent Twitter scraper that monitors multiple handles and uses AI to filter only the most important tweets.
 
-## Features
+## 🚀 Features
 
-- **Comprehensive Tweet Extraction**: Extracts full tweet content, author information, timestamps, and engagement statistics
-- **Media Support**: Handles images and videos with thumbnail extraction
-- **Quoted Tweet Detection**: Captures quoted tweet content and metadata
-- **Engagement Metrics**: Extracts likes, retweets, quotes, replies, and view counts
-- **Retweet Detection**: Identifies and processes retweets with original author information
-- **Pinned Tweet Recognition**: Detects pinned tweets
-- **JSON Output**: Saves structured data in JSON format for easy processing
+- **Multi-handle support** - Monitor multiple Twitter accounts simultaneously  
+- **AI-powered filtering** - GPT-4o-mini or Claude 3.5 Haiku classify tweet importance
+- **Real-time deduplication** - Never process the same tweet twice
+- **Per-handle configuration** - Different importance thresholds and contexts per account
+- **Cost-optimized** - Minimal API costs (~$0.07/month for 5 handles)
+- **Instant alerts** - Get notified immediately for high-priority tweets
+- **Comprehensive extraction** - Full tweet content, media, stats, and metadata
 
-## Prerequisites
+## 📁 Project Structure
 
-- Python 3.6+
-- Local Twitter/X instance running on `http://127.0.0.1:8080`
-
-## Installation
-
-1. Clone this repository:
-```bash
-git clone <repository-url>
-cd z
+```
+├── main.py              # Main entry point
+├── tweet_scraper.py     # Core scraping functionality  
+├── classifier.py        # AI classification logic
+├── config.py           # Configuration and handle settings
+├── examples.py         # Example usage patterns
+├── requirements.txt    # Dependencies
+└── setup.md           # Detailed setup instructions
 ```
 
-2. Install required dependencies:
+## 🔧 Quick Setup
+
+1. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-## Dependencies
+2. **Set API key (choose one):**
+```bash
+# For GPT-4o-mini (default, cheapest)
+export OPENAI_API_KEY="sk-your-openai-key-here"
 
-- `requests==2.31.0` - HTTP library for making web requests
-- `beautifulsoup4==4.12.2` - HTML parsing library
-- `lxml==4.9.3` - XML and HTML parser
+# For Claude 3.5 Haiku (better reasoning)  
+export ANTHROPIC_API_KEY="sk-ant-your-anthropic-key-here"
+```
 
-## Usage
+3. **Run the scraper:**
+```bash
+python main.py
+```
 
-### Basic Usage
+## 💡 Usage Examples
 
-Run the scraper to extract tweets:
+### Basic Multi-Handle Scraping
+```python
+from tweet_scraper import TwitterScraper
+
+scraper = TwitterScraper(
+    ai_classification=True,
+    ai_provider="gpt",  # or "claude"
+)
+
+data = scraper.extract_tweets_from_multiple_handles()
+```
+
+### Custom Handle Configuration
+```python
+handles_config = {
+    "elonmusk": {
+        "min_score": 6,
+        "context": "Elon Musk tech/business content"
+    },
+    "naval": {
+        "min_score": 8,  # Very selective
+        "context": "Naval Ravikant investing/philosophy content"  
+    }
+}
+
+scraper = TwitterScraper(handles_config=handles_config)
+```
+
+### Single Handle
+```python
+from main import scrape_single_handle
+
+result = scrape_single_handle("elonmusk", ai_provider="claude", min_score=7)
+```
+
+## 🎛️ Configuration
+
+Edit `config.py` to customize:
+- **Handles** - Add/remove Twitter handles to monitor
+- **AI settings** - Model parameters and API configuration
+- **Keywords** - Fallback classification terms
+- **Scoring thresholds** - Importance levels per handle
+
+## 📊 Cost Analysis
+
+Per handle (~600 tweets/month):
+- **GPT-4o-mini**: ~$0.014/month 
+- **Claude 3.5 Haiku**: ~$0.023/month
+- **Keyword-based**: Free
+
+For 5 handles: ~$0.07-0.12/month
+
+## 🏃 Quick Start
 
 ```bash
-python scraper.py
+# Interactive examples
+python examples.py
+
+# Default multi-handle scraping
+python main.py
+
+# View configuration options  
+cat config.py
 ```
 
-This will:
-1. Connect to `http://127.0.0.1:8080/elonmusk`
-2. Extract all available tweets from the page
-3. Save the data to `tweets.json`
-4. Display a summary with the first 3 tweets as preview
+## 📈 Sample Output
 
-### Programmatic Usage
+```
+🚨 HIGH PRIORITY TWEET (@elonmusk, Score: 9)
+   Reason: Major business announcement  
+   Author: Elon Musk (@elonmusk)
+   Text: Announcing the world's first Gigawatt+ AI training supercomputer...
 
-```python
-from scraper import ElonMuskScraper
-
-# Initialize the scraper
-scraper = ElonMuskScraper()
-
-# Extract tweets
-data = scraper.extract_tweets()
-
-# Save to custom file
-if data:
-    scraper.save_tweets(data, "custom_output.json")
+📊 SCRAPING SUMMARY (@elonmusk):
+   ✅ Important tweets kept: 3
+   ❌ Low-priority filtered: 17  
+   🤖 AI Provider: gpt
 ```
 
-### Custom Base URL
+See `setup.md` for detailed configuration options and advanced usage.
 
-If your local instance runs on a different URL:
+## 📋 Requirements
 
-```python
-scraper = ElonMuskScraper(base_url="http://localhost:3000")
-```
+- Python 3.6+
+- Local Twitter/X instance on `http://127.0.0.1:8080`
+- OpenAI or Anthropic API key (for AI classification)
 
-## Output Format
+## 🛠️ Advanced Usage
 
-The scraper generates a JSON file with the following structure:
+See the example files for more patterns:
+- `examples.py` - Interactive examples and comparisons
+- `config_example.py` - Legacy configuration examples  
+- `setup.md` - Comprehensive setup guide
 
-```json
-{
-  "url": "http://127.0.0.1:8080/elonmusk",
-  "scrape_timestamp": "2025-08-22 15:50:09",
-  "tweets_count": 20,
-  "tweets": [
-    {
-      "tweet_url": "/elonmusk/status/1958846872157921546#m",
-      "tweet_id": "1958846872157921546",
-      "is_retweet": false,
-      "is_pinned": true,
-      "author": "Elon Musk",
-      "username": "@elonmusk",
-      "date": "11h",
-      "full_date": "Aug 22, 2025 · 11:01 AM UTC",
-      "text": "Tweet content here...",
-      "quoted_tweet": {
-        "author": "Quoted Author",
-        "username": "@quoted_user",
-        "date": "21h",
-        "text": "Quoted tweet content...",
-        "link": "/quoted_user/status/123456789#m"
-      },
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/image_path.jpg",
-          "alt": "Alt text"
-        }
-      ],
-      "stats": {
-        "replies": "2856",
-        "retweets": "2962",
-        "quotes": "238",
-        "likes": "20082"
-      }
-    }
-  ]
-}
-```
+## ⚡ Performance
 
-## Data Fields
+- **Deduplication**: Never processes the same tweet twice
+- **Real-time filtering**: Immediate importance classification
+- **Batch processing**: Efficient multi-handle operations
+- **Cost optimized**: Minimal API usage
 
-### Tweet Object
-- `tweet_url`: Relative URL to the tweet
-- `tweet_id`: Unique tweet identifier
-- `is_retweet`: Boolean indicating if this is a retweet
-- `is_pinned`: Boolean indicating if this tweet is pinned
-- `author`: Display name of the tweet author
-- `username`: Twitter handle (e.g., @elonmusk)
-- `date`: Relative timestamp (e.g., "11h", "3m")
-- `full_date`: Full timestamp with timezone
-- `text`: Tweet content text
-- `retweet_info`: Information about original tweet if this is a retweet
-- `quoted_tweet`: Object containing quoted tweet details (if applicable)
-- `media`: Array of media objects (images, videos)
-- `stats`: Engagement statistics object
+## 📝 License
 
-### Media Object
-- `type`: "image" or "video"
-- `src`: Source URL for images
-- `thumbnail`: Thumbnail URL for videos
-- `alt`: Alt text for accessibility
-
-### Statistics Object
-- `replies`: Number of replies
-- `retweets`: Number of retweets
-- `quotes`: Number of quote tweets
-- `likes`: Number of likes
-- `views`: Number of views (when available)
-
-## Error Handling
-
-The scraper includes comprehensive error handling:
-- Network timeout protection (10 seconds)
-- HTTP status code validation
-- JSON serialization error handling
-- Graceful failure with error messages
-
-## Limitations
-
-- Requires a local Twitter/X instance running on the specified URL
-- Designed specifically for the HTML structure of the target instance
-- Single-page scraping (does not handle pagination)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is intended for educational and research purposes. Please ensure compliance with Twitter's Terms of Service and applicable laws when using this tool.
-
-## Disclaimer
-
-This scraper is designed for use with local instances and educational purposes. Users are responsible for ensuring their usage complies with all applicable terms of service and legal requirements.
+Educational and research use. Ensure compliance with Twitter's Terms of Service.
