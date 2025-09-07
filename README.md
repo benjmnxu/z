@@ -6,10 +6,11 @@ An intelligent Twitter scraper that monitors multiple handles and uses AI to fil
 
 - **Multi-handle support** - Monitor multiple Twitter accounts simultaneously  
 - **AI-powered filtering** - GPT-4o-mini or Claude 3.5 Haiku classify tweet importance
+- **Email notifications** - Get emailed for important tweets (score 8+)
 - **Real-time deduplication** - Never process the same tweet twice
 - **Per-handle configuration** - Different importance thresholds and contexts per account
 - **Cost-optimized** - Minimal API costs (~$0.07/month for 5 handles)
-- **Instant alerts** - Get notified immediately for high-priority tweets
+- **Instant alerts** - Console and email notifications for high-priority tweets
 - **Comprehensive extraction** - Full tweet content, media, stats, and metadata
 
 ## 📁 Project Structure
@@ -18,8 +19,11 @@ An intelligent Twitter scraper that monitors multiple handles and uses AI to fil
 ├── main.py              # Main entry point
 ├── tweet_scraper.py     # Core scraping functionality  
 ├── classifier.py        # AI classification logic
+├── email_notifier.py    # Email notification system
 ├── config.py           # Configuration and handle settings
 ├── examples.py         # Example usage patterns
+├── setup_email.py      # Email setup helper
+├── run_with_email.py   # Run with email notifications
 ├── requirements.txt    # Dependencies
 └── setup.md           # Detailed setup instructions
 ```

@@ -1,149 +1,229 @@
-# Multi-Handle AI Tweet Scraper Setup
+# Twitter Scraper Email Setup Guide
 
-## Installation
+This guide walks you through setting up email notifications for important tweets.
 
-1. Install dependencies:
+## Quick Setup
+
+### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Set up API keys (choose one or both):
-
-### For GPT-4o-mini (default, cheapest):
+### 2. Set API Key (choose one)
 ```bash
+# For GPT-4o-mini (default, cheapest)
 export OPENAI_API_KEY="sk-your-openai-key-here"
-```
 
-### For Claude 3.5 Haiku (better reasoning):
-```bash  
+# For Claude 3.5 Haiku (better reasoning)  
 export ANTHROPIC_API_KEY="sk-ant-your-anthropic-key-here"
 ```
 
-## Usage Examples
+### 3. Configure Email (Interactive)
+```bash
+python setup_email.py
+```
 
-### Multi-Handle Setup (Default):
+### 4. Run with Email Notifications
+```bash
+python run_with_email.py
+```
+
+## Manual Email Configuration
+
+If you prefer to set up email manually:
+
+### Gmail Setup (Recommended)
+1. **Enable 2-Factor Authentication** on your Google account
+2. **Generate App Password**:
+   - Go to https://myaccount.google.com/apppasswords
+   - Select "Mail" and generate a 16-character app password
+3. **Set Environment Variables**:
+   ```bash
+   export EMAIL_USER="your-email@gmail.com"
+   export EMAIL_PASSWORD="your-16-char-app-password"
+   export RECIPIENT_EMAIL="where-to-send@email.com"
+   ```
+
+### Outlook/Hotmail Setup
+1. **Enable 2-Factor Authentication**
+2. **Generate App Password** in security settings
+3. **Set Environment Variables**:
+   ```bash
+   export EMAIL_USER="your-email@outlook.com"
+   export EMAIL_PASSWORD="your-app-password"
+   export RECIPIENT_EMAIL="where-to-send@email.com"
+   export SMTP_SERVER="smtp-mail.outlook.com"
+   export SMTP_PORT="587"
+   ```
+
+### Yahoo Mail Setup
+1. **Enable 2-Factor Authentication**
+2. **Generate App Password** in account security
+3. **Set Environment Variables**:
+   ```bash
+   export EMAIL_USER="your-email@yahoo.com"
+   export EMAIL_PASSWORD="your-app-password"
+   export RECIPIENT_EMAIL="where-to-send@email.com"
+   export SMTP_SERVER="smtp.mail.yahoo.com"
+   export SMTP_PORT="587"
+   ```
+
+## Email Notification Settings
+
+### Importance Thresholds
+- **Score 8+**: High-priority tweets that trigger immediate email alerts
+- **Score 6-7**: Important tweets shown in console but no email
+- **Score 1-5**: Low-priority tweets filtered out
+
+### Notification Types
+1. **Individual Alerts**: Immediate email for tweets scoring 8+
+2. **Batch Summary**: Summary email after multi-handle scraping
+
+### Per-Handle Configuration
+Edit `config.py` to customize thresholds:
 ```python
-from scraper import TwitterScraper
-
-handles_config = {
+HANDLES_CONFIG = {
     "elonmusk": {
         "min_score": 6,
-        "context": "Elon Musk tech/business content (Tesla, SpaceX, xAI)"
-    },
-    "sama": {
-        "min_score": 7,  # Higher threshold
-        "context": "Sam Altman content (OpenAI, AI development)"
-    }
-}
-
-scraper = TwitterScraper(
-    ai_classification=True,
-    ai_provider="gpt",
-    handles_config=handles_config
-)
-
-# Scrape all configured handles
-data = scraper.extract_tweets_from_multiple_handles()
-```
-
-### Single Handle:
-```python
-from scraper import scrape_single_handle
-
-data = scrape_single_handle(
-    handle="elonmusk",
-    ai_provider="claude",
-    min_score=7
-)
-```
-
-### Custom Handle Selection:
-```python
-# Only scrape specific handles from config
-data = scraper.extract_tweets_from_multiple_handles(["elonmusk", "sama"])
-```
-
-### Switch AI Provider:
-```python
-scraper = TwitterScraper(
-    ai_classification=True,
-    ai_provider="claude",     # Use Claude instead of GPT
-    handles_config=handles_config
-)
-```
-
-### Disable AI (Free):
-```python
-scraper = TwitterScraper(
-    ai_classification=False,  # No AI costs, keyword-based only
-    handles_config=handles_config
-)
-```
-
-## Handle Configuration
-
-Each handle can have individual settings:
-
-```python
-handles_config = {
-    "handle_name": {
-        "min_score": 6,           # 1-10 importance threshold
-        "context": "Description"   # AI context for classification
-    }
-}
-```
-
-### Example Configurations:
-
-```python
-handles_config = {
-    "elonmusk": {
-        "min_score": 6,
-        "context": "Elon Musk tech/business (Tesla, SpaceX, xAI, major announcements)"
+        "context": "Elon Musk tech/business content"
     },
     "naval": {
         "min_score": 8,  # Very selective
-        "context": "Naval Ravikant (startups, investing, philosophy)"
-    },
-    "karpathy": {
-        "min_score": 6,
-        "context": "Andrej Karpathy (AI research, machine learning insights)"
+        "context": "Naval Ravikant investing/philosophy content"
     }
 }
 ```
 
-## Configuration Options
+## Testing Email Setup
 
-| Parameter | Options | Description |
-|-----------|---------|-------------|
-| `ai_classification` | `True`/`False` | Enable AI vs keyword-based |
-| `ai_provider` | `"gpt"`/`"claude"` | Which AI API to use |
-| `handles_config` | `dict` | Per-handle settings |
-
-## Cost Estimates
-
-Per handle, ~600 tweets/month:
-- **GPT-4o-mini**: ~$0.014/month per handle
-- **Claude 3.5 Haiku**: ~$0.023/month per handle  
-- **Keyword-based**: Free
-
-For 5 handles:
-- **GPT**: ~$0.07/month
-- **Claude**: ~$0.12/month
-
-## Output Files
-
-- `tweets_multi_handle.json` - Combined results from all handles
-- `seen_tweets.json` - Tracking file to avoid duplicates
-
-## Quick Start
-
-Run interactive examples:
+### Test Current Configuration
 ```bash
-python config_example.py
+python setup_email.py test
 ```
 
-Or run default multi-handle scraper:
+### Send Test Email
 ```bash
-python scraper.py
+python -c "
+from email_notifier import EmailNotifier
+notifier = EmailNotifier()
+test_tweet = {
+    'importance_score': 9,
+    'importance_reason': 'Test notification',
+    'author': 'Test User',
+    'username': '@test',
+    'text': 'This is a test email!',
+    'stats': {'likes': '100', 'retweets': '50'}
+}
+notifier.send_tweet_notification(test_tweet, 'test')
+"
+```
+
+## Running the Scraper
+
+### With Email Notifications
+```bash
+python run_with_email.py
+```
+
+### Standard Mode (No Email)
+```bash
+python main.py
+```
+
+### Single Handle
+```bash
+python -c "
+from main import scrape_single_handle
+result = scrape_single_handle('elonmusk', ai_provider='gpt', min_score=7)
+"
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**Email Authentication Failed**
+- Verify 2-factor authentication is enabled
+- Use app passwords, not regular passwords
+- Check SMTP server settings
+
+**No Tweets Found**
+- Verify local Twitter instance is running on `http://127.0.0.1:8080`
+- Check handle names are correct (without @ symbol)
+
+**AI Classification Not Working**
+- Verify API keys are set correctly
+- Check API quotas and billing
+- System falls back to keyword classification if AI fails
+
+**Deduplication Issues**
+- Check `seen_tweets.json` file permissions
+- Verify tweet IDs are being extracted correctly
+
+### Error Messages
+
+**"Email not configured"**
+- Run `python setup_email.py` to configure
+- Set required environment variables manually
+
+**"Email connection failed"**
+- Verify SMTP credentials and server settings
+- Check firewall/network restrictions
+
+**"No important tweets found"**
+- Lower importance thresholds in `config.py`
+- Verify AI classification is working
+
+## Cost Estimation
+
+### AI Classification Costs (per handle, ~600 tweets/month)
+- **GPT-4o-mini**: ~$0.014/month
+- **Claude 3.5 Haiku**: ~$0.023/month
+
+### For 5 Handles
+- **Total cost**: ~$0.07-0.12/month
+
+## Configuration Files
+
+- `config.py` - Handle settings and thresholds
+- `seen_tweets.json` - Deduplication tracking (auto-created)
+- `.env_email` - Email configuration (created by setup script)
+
+## Advanced Usage
+
+### Custom Handle Configuration
+```python
+custom_config = {
+    "username": {
+        "min_score": 7,
+        "context": "Specific context for AI classification"
+    }
+}
+
+scraper = TwitterScraper(
+    handles_config=custom_config,
+    ai_provider="claude",
+    enable_email_notifications=True,
+    email_min_score=8
+)
+```
+
+### AI Provider Switching
+```python
+# Use Claude for better reasoning
+scraper = TwitterScraper(ai_provider="claude")
+
+# Use GPT for cost efficiency
+scraper = TwitterScraper(ai_provider="gpt")
+```
+
+### Batch Processing
+```python
+# Multi-handle scraping with email
+data = scraper.extract_tweets_from_multiple_handles()
+
+# Process results
+if data['stats']['total_important_tweets'] > 0:
+    scraper.save_tweets(data)
+    scraper.print_results_summary(data)
 ```

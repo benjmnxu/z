@@ -1,219 +1,70 @@
 {
-  "scrape_timestamp": "2025-08-22 17:17:01",
+  "scrape_timestamp": "2025-09-01 23:07:38",
   "handles_scraped": [
     "elonmusk",
     "sama",
     "karpathy",
     "naval",
     "pmarca",
-    "balajis"
+    "AndrewYNg",
+    "Emerj",
+    "markgurman",
+    "TechCrunch",
+    "FT",
+    "JustinWolfers",
+    "AP_Politics"
   ],
   "individual_results": [
     {
       "handle": "elonmusk",
       "url": "http://127.0.0.1:8080/elonmusk",
-      "scrape_timestamp": "2025-08-22 17:16:58",
-      "tweets_count": 0,
+      "scrape_timestamp": "2025-09-01 23:07:27",
+      "tweets_count": 3,
       "new_tweets_count": 0,
-      "skipped_tweets_count": 20,
+      "skipped_tweets_count": 17,
       "tweets": [],
-      "filtered_out_count": 0,
+      "filtered_out_count": 3,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
-        "min_score": 6,
+        "min_score": 9,
         "context": "Elon Musk tech/business content (Tesla, SpaceX, xAI, Neuralink, major announcements)"
       }
     },
     {
       "handle": "sama",
       "url": "http://127.0.0.1:8080/sama",
-      "scrape_timestamp": "2025-08-22 17:16:58",
-      "tweets_count": 20,
-      "new_tweets_count": 3,
-      "skipped_tweets_count": 0,
-      "tweets": [
-        {
-          "tweet_url": "/sama/status/1957849495733166587#m",
-          "tweet_id": "1957849495733166587",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Sam Altman",
-          "username": "@sama",
-          "date": "Aug 19",
-          "full_date": "Aug 19, 2025 · 4:57 PM UTC",
-          "text": "ChatGPT Go launches in India!\n\nLooking forward to making ChatGPT more affordable in India first, and then learning from feedback to expand to other countries.",
-          "quoted_tweet": {
-            "author": "Nick Turley",
-            "username": "@nickaturley",
-            "date": "Aug 19",
-            "text": "We just launched ChatGPT Go in India, a new subscription tier that gives users in India more access to our most popular features: 10x higher message limits, 10x more image generations, 10x more file uploads, and 2x longer memory compared with our free tier. All for Rs. 399. 🇮🇳",
-            "link": "/nickaturley/status/1957613818902892985#m"
-          },
-          "media": [],
-          "stats": {
-            "replies": "",
-            "retweets": "",
-            "likes": ""
-          },
-          "handle": "sama",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/sama/status/1955095125597753567#m",
-          "tweet_id": "1955095125597753567",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Sam Altman",
-          "username": "@sama",
-          "date": "Aug 12",
-          "full_date": "Aug 12, 2025 · 2:32 AM UTC",
-          "text": "I hope someone will get counter-discovery on this, I and many others would love to know what's been happening.\n\nBut OpenAI will just stay focused on making great products.",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "sama",
-          "importance_score": 7,
-          "importance_reason": "Company keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/sama/status/1954703747495649670#m",
-          "tweet_id": "1954703747495649670",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Sam Altman",
-          "username": "@sama",
-          "date": "Aug 11",
-          "full_date": "Aug 11, 2025 · 12:37 AM UTC",
-          "text": "If you have been following the GPT-5 rollout, one thing you might be noticing is how much of an attachment some people have to specific AI models. It feels different and stronger than the kinds of attachment people have had to previous kinds of technology (and so suddenly deprecating old models that users depended on in their workflows was a mistake).\n\nThis is something we’ve been closely tracking for the past year or so but still hasn’t gotten much mainstream attention (other than when we released an update to GPT-4o that was too sycophantic).\n\n(This is just my current thinking, and not yet an official OpenAI position.)\n\nPeople have used technology including AI in self-destructive ways; if a user is in a mentally fragile state and prone to delusion, we do not want the AI to reinforce that. Most users can keep a clear line between reality and fiction or role-play, but a small percentage cannot. We value user freedom as a core principle, but we also feel responsible in how we introduce new technology with new risks.\n\nEncouraging delusion in a user that is having trouble telling the difference between reality and fiction is an extreme case and it’s pretty clear what to do, but the concerns that worry me most are more subtle. There are going to be a lot of edge cases, and generally we plan to follow the principle of “treat adult users like adults”, which in some cases will include pushing back on users to ensure they are getting what they really want.\n\nA lot of people effectively use ChatGPT as a sort of therapist or life coach, even if they wouldn’t describe it that way. This can be really good! A lot of people are getting value from it already today.\n\nIf people are getting good advice, leveling up toward their own goals, and their life satisfaction is increasing over years, we will be proud of making something genuinely helpful, even if they use and rely on ChatGPT a lot. If, on the other hand, users have a relationship with ChatGPT where they think they feel better after talking but they’re unknowingly nudged away from their longer term well-being (however they define it), that’s bad. It’s also bad, for example, if a user wants to use ChatGPT less and feels like they cannot.\n\nI can imagine a future where a lot of people really trust ChatGPT’s advice for their most important decisions. Although that could be great, it makes me uneasy. But I expect that it is coming to some degree, and soon billions of people may be talking to an AI in this way. So we (we as in society, but also we as in OpenAI) have to figure out how to make it a big net positive.\n\nThere are several reasons I think we have a good shot at getting this right. We have much better tech to help us measure how we are doing than previous generations of technology had. For example, our product can talk to users to get a sense for how they are doing with their short- and long-term goals, we can explain sophisticated and nuanced issues to our models, and much more.",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "replies": "",
-            "retweets": "",
-            "likes": ""
-          },
-          "handle": "sama",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        }
-      ],
-      "filtered_out_count": 17,
+      "scrape_timestamp": "2025-09-01 23:07:28",
+      "tweets_count": 3,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 17,
+      "tweets": [],
+      "filtered_out_count": 3,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
-        "min_score": 7,
+        "min_score": 8,
         "context": "Sam Altman content (OpenAI, AI development, tech leadership, industry insights)"
       }
     },
     {
       "handle": "karpathy",
       "url": "http://127.0.0.1:8080/karpathy",
-      "scrape_timestamp": "2025-08-22 17:16:59",
-      "tweets_count": 21,
-      "new_tweets_count": 13,
-      "skipped_tweets_count": 0,
+      "scrape_timestamp": "2025-09-01 23:07:29",
+      "tweets_count": 6,
+      "new_tweets_count": 4,
+      "skipped_tweets_count": 15,
       "tweets": [
         {
-          "tweet_url": "/karpathy/status/1617979122625712128#m",
-          "tweet_id": "1617979122625712128",
-          "is_retweet": false,
-          "is_pinned": true,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "24 Jan 2023",
-          "full_date": "Jan 24, 2023 · 8:14 PM UTC",
-          "text": "The hottest new programming language is English",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "replies": "",
-            "retweets": "",
-            "quotes": "",
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 9,
-          "importance_reason": "Pinned tweet (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1957574489358873054#m",
-          "tweet_id": "1957574489358873054",
+          "tweet_url": "/karpathy/status/1959703967694545296#m",
+          "tweet_id": "1959703967694545296",
           "is_retweet": false,
           "is_pinned": false,
           "author": "Andrej Karpathy",
           "username": "@karpathy",
-          "date": "Aug 18",
-          "full_date": "Aug 18, 2025 · 10:45 PM UTC",
-          "text": "I get ~10 spam calls per day (various automated voicemails, \"loan pre-approval\" etc) and ~5 spam messages per day (usually phishing).\n\n- I have AT&T Active Armor, all of the above still slips through.\n- All of the above is always from new, unique numbers so blocking doesn't work.\n- I am on all Do Not Call lists.\n- I have iOS \"Silence Unknown Callers\" on, but even if it catches & silences them I still get the notifications.\n\nNot sure if other people are seeing something similar or figured out anything that works",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "replies": "",
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 6,
-          "importance_reason": "Tech keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1957561075744010253#m",
-          "tweet_id": "1957561075744010253",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Aug 18",
-          "full_date": "Aug 18, 2025 · 9:51 PM UTC",
-          "text": "Ok, spent an ~hour sifting through submissions. The biggest challenge was the spam, as majority of replies are people linking to their own existing projects, not things made for the challenge. Of the ones that were:\n\nWinner: I most enjoyed this one from@uncertainsys- OmegaQuest. He's solving Humanity's Last Exam problems with heavy AI use in the loop on video. Actually I really identified with the long pauses and general confusion in trying to use the current state of the art systems in learning something hard and new, where they are simultaneously so tantalizingly helpful at the margins, but still really poor overall, compared to an imagined human expert tutor. The \"explanations\" are... not. But I love the tenacity on display in working out something hard and seeing how far you can get with AI. A good reminder how it's better than what was, but also so far from what could be.nitter.net/uncertainsys/status/19…Shoutout to@measure_planfor cool \"visual vibe coding\" projects, e.g. new musical instrumentsnitter.net/measure_plan/status/19…A few of people commented that the challenge shouldn't have to be only for projects uniquely made for the challenge. If that were the case then shoutout to@evanliinet al. who linked to tinytpu, i really like the animated diagram, i haven't seen that before.nitter.net/evanliin/status/195749…Shoutout to@ChrisChipMonkfor partially incepting the experiment a while ago withnitter.net/ChrisChipMonk/status/1…but I basically come out agreeing with@nearcyanin his earlier commentnitter.net/nearcyan/status/193839…, maybe even $5K isn't :)",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {},
-          "handle": "karpathy",
-          "importance_score": 6,
-          "importance_reason": "Tech keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1956765908078387382#m",
-          "tweet_id": "1956765908078387382",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Aug 16",
-          "full_date": "Aug 16, 2025 · 5:12 PM UTC",
-          "text": "I am (slowly) re-reading the Tolkien legendarium (of which Lord of the Rings is a small part). The whole body of work is so incredible and there's nothing else like it... it dilutes other worlds of fiction. Wait - your story doesn't have a comprehensive history/mythology spanning multiple ages all the way back to a creation myth as detailed in separate volumes? You didn't first invent new languages and dialects for your characters? You didn't pack it with powerful themes and stories written it in a beautiful, archaic style and compose poems and songs alongside? It didn't take you multiple decades of iteration? And what of all the uncharted territory still remaining? Is Tom Bombadil one of the Ainur. Where are the Entwives. What happened to the two unaccounted Istari. Can we hear more about what it was like in Cuiviénen when the elves first awoke? Or to see the light of the two trees of Valinor. Or of the splendor of the caves of Aglarond.\n\nWhat's most on my mind though - the Tolkien legendarium is imo a concrete example of a height of culture. Does AI, today or soon, make it easier to reach this high via empowerment in both writing and ideation? Or harder, when quick wins are tempting and ~free, and an independent ability to create is stifled. If such a body of work is made again but now with heavy AI assistance, does it inspire the same wonder? What if thousands of them come out on demand with just a prompt? Why do you feel cheated when you learn that something your read was AI generated? Is it transient or a function of capability? Is it slop? What is slop? Or is wonder inseparable from its own creation myth of a lifelong obsession of a mind like your own? So many questions.",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "replies": "",
-            "retweets": "",
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 6,
-          "importance_reason": "Tech keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1954224651443544436#m",
-          "tweet_id": "1954224651443544436",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Aug 9",
-          "full_date": "Aug 9, 2025 · 4:53 PM UTC",
-          "text": "I'm noticing that due to (I think?) a lot of benchmarkmaxxing on long horizon tasks, LLMs are becoming a little too agentic by default, a little beyond my average use case.\n\nFor example in coding, the models now tend to reason for a fairly long time, they have an inclination to start listing and grepping files all across the entire repo, they do repeated web searchers, they over-analyze and over-think little rare edge cases even in code that is knowingly incomplete and under active development, and often come back ~minutes later even for simple queries.\n\nThis might make sense for long-running tasks but it's less of a good fit for more \"in the loop\" iterated development that I still do a lot of, or if I'm just looking for a quick spot check before running a script, just in case I got some indexing wrong or made some dumb error. So I find myself quite often stopping the LLMs with variations of \"Stop, you're way overthinking this. Look at only this single file. Do not use any tools. Do not over-engineer\", etc.\n\nBasically as the default starts to slowly creep into the \"ultrathink\" super agentic mode, I feel a need for the reverse, and more generally good ways to indicate or communicate intent / stakes, from \"just have a quick look\" all the way to \"go off for 30 minutes, come back when absolutely certain\".",
+          "date": "Aug 24",
+          "full_date": "Aug 24, 2025 · 7:46 PM UTC",
+          "text": "Continuing the journey of optimal LLM-assisted coding experience. In particular, I find that instead of narrowing in on a perfect one thing my usage is increasingly diversifying across a few workflows that I \"stitch up\" the pros/cons of:\n\nPersonally the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete. This is because I find that writing concrete chunks of code/comments myself and in the right part of the code is a high bandwidth way of communicating \"task specification\" to the LLM, i.e. it's primarily about task specification bits - it takes too many bits and too much latency to communicate what I want in text, and it's faster to just demonstrate it in the code and in the right place. Sometimes the tab complete model is annoying so I toggle it on/off a lot.\n\nNext layer up is highlighting a concrete chunk of code and asking for some kind of a modification.\n\nNext layer up is Claude Code / Codex / etc, running on the side of Cursor, which I go to for larger chunks of functionality that are also fairly easy to specify in a prompt. These are super helpful, but still mixed overall and slightly frustrating at times. I don't run in YOLO mode because they can go off-track and do dumb things you didn't want/need and I ESC fairly often. I also haven't learned to be productive using more than one instance in parallel - one already feels hard enough. I haven't figured out a good way to keep CLAUDE[.]md good or up to date. I often have to do a pass of \"cleanups\" for coding style, or matters of code taste. E.g. they are too defensive and often over-use try/catch statements, they often over-complicate abstractions, they overbloat code (e.g. a nested if-the-else constructs when a list comprehension or a one-liner if-then-else would work), or they duplicate code chunks instead of creating a nice helper function, things like that... they basically don't have a sense of taste. They are indispensable in cases where I inch into a more vibe-coding territory where I'm less familiar (e.g. writing some rust recently, or sql commands, or anything else I've done less of before). I also tried CC to teach me things alongside the code it was writing but that didn't work at all - it really wants to just write code a lot more than it wants to explain anything along the way. I tried to get CC to do hyperparameter tuning, which was highly amusing. They are also super helpful in all kinds of lower-stakes one-off custom visualization or utilities or debugging code that I would never write otherwise because it would have taken way too long. E.g. CC can hammer out 1,000 lines of one-off extensive visualization/code just to identify a specific bug, which gets all deleted right after we find it. It's the code post-scarcity era - you can just create and then delete thousands of lines of super custom, super ephemeral code now, it's ok, it's not this precious costly thing anymore.\n\nFinal layer of defense is GPT5 Pro, which I go to for the hardest things. E.g. it has happened to me a few times now that I / Cursor / CC are all stuck on a bug for 10 minutes, but when I copy paste the whole thing to 5 Pro, it goes off for 10 minutes but then actually finds a really subtle bug. It is very strong. It can dig up all kinds of esoteric docs and papers and such. I've also used it for other meatier tasks, e.g. suggestions on how to clean up abstractions (mixed results, sometimes good ideas but not all), or an entire literature review around how people do this or that and it comes back with good relevant resources / pointers.\n\nAnyway, coding feels completely blown open with possibility across a number of \"kinds\" of coding and then a number of tools with their pros/cons. It's hard to avoid the feeling of anxiety around not being at the frontier of what is collectively possible, hence random sunday shower of thoughts and a good amount of curiosity about what others are finding.",
           "quoted_tweet": null,
           "media": [],
           "stats": {
@@ -242,58 +93,6 @@
           "handle": "karpathy",
           "importance_score": 8,
           "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1946745524033593739#m",
-          "tweet_id": "1946745524033593739",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Jul 20",
-          "full_date": "Jul 20, 2025 · 1:34 AM UTC",
-          "text": "Hi@gmaildoes the \"report phishing\" button do anything",
-          "quoted_tweet": null,
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/media%2FGwQ6gB4X0AEFbUy.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            }
-          ],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 6,
-          "importance_reason": "Tech keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1946325810618700033#m",
-          "tweet_id": "1946325810618700033",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Jul 18",
-          "full_date": "Jul 18, 2025 · 9:46 PM UTC",
-          "text": "\"Using a better model for analysis\" 🤨\nI didn't realize I was using haiku all this time, no idea when claude code snuck this one in rofl.",
-          "quoted_tweet": null,
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/media%2FGwK7Mq_XYAA1W0x.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            }
-          ],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 6,
-          "importance_reason": "Tech keyword (AI not available - using keywords)",
           "ai_provider": "gpt"
         },
         {
@@ -333,26 +132,6 @@
           "ai_provider": "gpt"
         },
         {
-          "tweet_url": "/karpathy/status/1944435412489171119#m",
-          "tweet_id": "1944435412489171119",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Jul 13",
-          "full_date": "Jul 13, 2025 · 4:35 PM UTC",
-          "text": "Scaling up RL is all the rage right now, I had a chat with a friend about it yesterday. I'm fairly certain RL will continue to yield more intermediate gains, but I also don't expect it to be the full story. RL is basically \"hey this happened to go well (/poorly), let me slightly increase (/decrease) the probability of every action I took for the future\". You get a lot more leverage from verifier functions than explicit supervision, this is great. But first, it looks suspicious asymptotically - once the tasks grow to be minutes/hours of interaction long, you're really going to do all that work just to learn a single scalar outcome at the very end, to directly weight the gradient? Beyond asymptotics and second, this doesn't feel like the human mechanism of improvement for majority of intelligence tasks. There's significantly more bits of supervision we extract per rollout via a review/reflect stage along the lines of \"what went well? what didn't go so well? what should I try next time?\" etc. and the lessons from this stage feel explicit, like a new string to be added to the system prompt for the future, optionally to be distilled into weights (/intuition) later a bit like sleep. In English, we say something becomes \"second nature\" via this process, and we're missing learning paradigms like this. The new Memory feature is maybe a primordial version of this in ChatGPT, though it is only used for customization not problem solving. Notice that there is no equivalent of this for e.g. Atari RL because there are no LLMs and no in-context learning in those domains. \n\nExample algorithm: given a task, do a few rollouts, stuff them all into one context window (along with the reward in each case), use a meta-prompt to review/reflect on what went well or not to obtain string \"lesson\", to be added to system prompt (or more generally modify the current lessons database). Many blanks to fill in, many tweaks possible, not obvious.\n\nExample of lesson: we know LLMs can't super easily see letters due to tokenization and can't super easily count inside the residual stream, hence 'r' in 'strawberry' being famously difficult. Claude system prompt had a \"quick fix\" patch - a string was added along the lines of \"If the user asks you to count letters, first separate them by commas and increment an explicit counter each time and do the task like that\". This string is the \"lesson\", explicitly instructing the model how to complete the counting task, except the question is how this might fall out from agentic practice, instead of it being hard-coded by an engineer, how can this be generalized, and how lessons can be distilled over time to not bloat context windows indefinitely.\n\nTLDR: RL will lead to more gains because when done well, it is a lot more leveraged, bitter-lesson-pilled, and superior to SFT. It doesn't feel like the full story, especially as rollout lengths continue to expand. There are more S curves to find beyond, possibly specific to LLMs and without analogues in game/robotics-like environments, which is exciting.",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 7,
-          "importance_reason": "Company keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
           "tweet_url": "/karpathy/status/1943411187296686448#m",
           "tweet_id": "1943411187296686448",
           "is_retweet": false,
@@ -377,68 +156,9 @@
           "importance_score": 6,
           "importance_reason": "Tech keyword (AI not available - using keywords)",
           "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1941616674094170287#m",
-          "tweet_id": "1941616674094170287",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Jul 5",
-          "full_date": "Jul 5, 2025 · 9:54 PM UTC",
-          "text": "How to build a thriving open source community by writing code like bacteria do 🦠. Bacterial code (genomes) are:\n\n- small (each line of code costs energy)\n- modular (organized into groups of swappable operons)\n- self-contained (easily \"copy paste-able\" via horizontal gene transfer)\n\nIf chunks of code are small, modular, self-contained and trivial to copy-and-paste, the community can thrive via horizontal gene transfer. For any function (gene) or class (operon) that you write: can you imagine someone going \"yoink\" without knowing the rest of your code or having to import anything new, to gain a benefit? Could your code be a trending GitHub gist?\n\nThis coding style guide has allowed bacteria to colonize every ecological nook from cold to hot to acidic or alkaline in the depths of the Earth and the vacuum of space, along with an insane diversity of carbon anabolism, energy metabolism, etc. It excels at rapid prototyping but... it can't build complex life. By comparison, the eukaryotic genome is a significantly larger, more complex, organized and coupled monorepo. Significantly less inventive but necessary for complex life - for building entire organs and coordinating their activity. With our advantage of intelligent design, it should possible to take advantage of both. Build a eukaryotic monorepo backbone if you have to, but maximize bacterial DNA.",
-          "quoted_tweet": null,
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/media%2FGvIB64XWYAAg1B8.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            }
-          ],
-          "stats": {
-            "retweets": "",
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 7,
-          "importance_reason": "Company keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1940181840201228384#m",
-          "tweet_id": "1940181840201228384",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Jul 1",
-          "full_date": "Jul 1, 2025 · 10:52 PM UTC",
-          "text": "Test-based certification is the only way forward in food, eager to see more over time.\n\nFood is not simple anymore - it is a complex, industrial product with global supply and processing chains. Contamination can be introduced in many stages along the way from farming to harvest, processing, packaging, transport and preparation. Examples include pesticides, nitrates, heavy metals, plastics, bacteria, etc etc. So it's not just about what food to eat, it's about which specific food item SKU, from which specific supplier, and the only way to know is to test. E.g. these two cat foods look the same, the ingredients might look the same, but the one on the left is 1000X higher in glyphosate and 100X in lead. Or e.g. this baby food formula or turmeric is loaded with heavy metals, this canned seafood, your local boba or this milk brand is seeped in plastics, or this breakfast cereal way way too high in glyphosate (real examples).\n\nI used to think that the FDA exercises oversight but the reality is that it doesn't have anywhere near enough resources to do it thoroughly and their focus is a lot more on e.g. acute microbial threats (like Salmonella, E. coli, Listeria, ...) that immediately hospitalize people, less on the rapidly growing diversity of compounds that may or may not deteriorate health over decades and that are basically treated as innocent until proven guilty under GRAS and so on. Meanwhile, the public health macro picture looks not so great - obesity up, type-2 diabetes up, fertility down (sperm count/motility), weird endocrine trends (e.g. testosterone down in men), depression and anxiety up... It wouldn't shock me if modern industrial food turns out to be a major contributor.",
-          "quoted_tweet": {
-            "author": "Bryan Johnson",
-            "username": "@bryan_johnson",
-            "date": "Jul 1",
-            "text": "Something new and exciting is here\n\nDog and cat food toxin testing\n+ fund your pet's food\n+ if brand claims results, your money comes back \n+ fund more tests\n\nTogether we can rapidly test all US dog and cat food. \n\nInitial results \nBlueprint Quantified tested 22 mass-market products (12 dog foods, 10 cat foods) from 14 US national brands. \n\nGlyphosate\n+ Detected in 21 of 22 products (95%).\n+ 8 products hit the upper detection limit of 1,000 ppm\n+ That’s 118 mg glyphosate in a 118 g serving, equivalent to maximum tolerable exposure for 68 kg human \n+ Lowest non-zero hit: 0.04 ppm (Merrick Chicken & Sweet Potato)\n\nHeavy metals\n+ mercury, lead, arsenic, and cadmium were detected in every sample\n+ arsenic: up to 0.238 ppm / 238 ppb (Sheba Seafood Wet Cat Food). 8.9 mcg per 38 g serving\n+ cadmium: up to 0.084 ppm / 83.6 ppb (Royal Canin Medium Adult Dog).\n+ lead: up to 0.343 ppm / 343 ppb (Royal Canin Indoor Adult Cat), 12.9 mcg of lead per 38 g serving  (26x California Prop 65’s daily limit (0.5 mcg))\n+ mercury: up to 0.012 ppm / 11.8 ppb (Sheba Seafood Wet Cat Food)\n\nTop heavy metal toxicity:\n+ Wellness CORE+ Original (Dog): 43.4 µg/serving\n+ Nutro Natural Choice Small Breed (Dog): 42.6 µg/serving\n+ Blue Buffalo Homestyle Senior (Dog, wet): 35.6 µg/serving\n+ Royal Canin Size Health Medium Dog: 33.7 µg/serving\n+ Pedigree Small Dog “Grilled Steak & Veg” (Dog): 27.9 µg µg/serving\n\nCleanest product\nPurina Friskies Surfin’ & Turfin’ (Cat) had non-detectable glyphosate, and the second lowest total heavy metals.",
-            "link": "/bryan_johnson/status/1940112033493786979#m"
-          },
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/media%2FGuym1p0XIAAfMzh.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            }
-          ],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
         }
       ],
-      "filtered_out_count": 8,
+      "filtered_out_count": 2,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -449,54 +169,12 @@
     {
       "handle": "naval",
       "url": "http://127.0.0.1:8080/naval",
-      "scrape_timestamp": "2025-08-22 17:16:59",
-      "tweets_count": 20,
-      "new_tweets_count": 2,
-      "skipped_tweets_count": 0,
-      "tweets": [
-        {
-          "tweet_url": "/naval/status/1002103360646823936#m",
-          "tweet_id": "1002103360646823936",
-          "is_retweet": false,
-          "is_pinned": true,
-          "author": "Naval",
-          "username": "@naval",
-          "date": "31 May 2018",
-          "full_date": "May 31, 2018 · 8:23 AM UTC",
-          "text": "How to Get Rich (without getting lucky):",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "replies": "",
-            "retweets": "",
-            "quotes": "",
-            "likes": ""
-          },
-          "handle": "naval",
-          "importance_score": 9,
-          "importance_reason": "Pinned tweet (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/naval/status/1952519682256466329#m",
-          "tweet_id": "1952519682256466329",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Naval",
-          "username": "@naval",
-          "date": "Aug 4",
-          "full_date": "Aug 4, 2025 · 11:59 PM UTC",
-          "text": "nav.al/hiringNivi: We’re hiring an editor for the Naval Podcast, and Naval is also hiring a chief of staff. If you’re not interested in either of these, you can move on to the next episode. Let me give you some details on both of them.\n\nFirst, the editor for the Naval Podcast, which as you already know, is the most timeless and overproduced podcast in human history. The editor will be primarily editing the podcast in Descript. They’ll be editing the transcripts for clarity and posting videos to social media to get Naval’s ideas into the hands of 8 billion people on planet Earth. If you’re already working on another podcast, don’t hesitate to contact us. You’ll learn more with us.\n\nIf you’re more of a producer than an editor, feel free to get in touch anyway. We are open to new ideas. This is a part-time role, but there’s infinite room to get into more challenging and creative problems. You don’t need experience, but you need to be extremely smart and high-slope. Here’s some more details on what we’re looking for.\n\nYou must have a DSM-5 level attention to detail. You must be a good writer with a nose for design, and you must get things the first time you hear them. Please send less than 750 characters about yourself to podcast@nav.al. Include links to your best work and your smartest tweet. Tell us about a hard problem you’ve solved, new knowledge you’re creating for fun, and share something you’ve made with AI. The shorter your email, the better. \n\nThanks for considering us.\n\nChief of Staff\n\nOn to the second position. Naval is also hiring a chief of staff to work directly with him. This is independent of the podcast. You’ll be working with him to solve problems, including traveling the world to recruit engineers, researching investments, throwing events, personal tasks, and anything else he needs done.\n\nThe work will range from prestigious to pauperian. You must be extremely technical, always working, based in San Francisco and willing to travel anytime. The right person probably has a couple years of work under their belt and wants to start a company one day. Again, please send under 750 characters about yourself to chief@nav.al.\n\nInclude links to your best work and your smartest tweet. Tell us about a hard problem you’ve solved, new knowledge you’re creating for fun, and share something you’ve made with AI. The shorter your message, the better.\n\nThanks for considering this.",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {},
-          "handle": "naval",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        }
-      ],
-      "filtered_out_count": 18,
+      "scrape_timestamp": "2025-09-01 23:07:29",
+      "tweets_count": 7,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 13,
+      "tweets": [],
+      "filtered_out_count": 7,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -507,10 +185,10 @@
     {
       "handle": "pmarca",
       "url": "http://127.0.0.1:8080/pmarca",
-      "scrape_timestamp": "2025-08-22 17:17:00",
-      "tweets_count": 21,
+      "scrape_timestamp": "2025-09-01 23:07:31",
+      "tweets_count": 8,
       "new_tweets_count": 1,
-      "skipped_tweets_count": 0,
+      "skipped_tweets_count": 13,
       "tweets": [
         {
           "tweet_url": "/pmarca/status/1902724994607570975#m",
@@ -544,7 +222,7 @@
           "ai_provider": "gpt"
         }
       ],
-      "filtered_out_count": 20,
+      "filtered_out_count": 7,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -553,258 +231,299 @@
       }
     },
     {
-      "handle": "balajis",
-      "url": "http://127.0.0.1:8080/balajis",
-      "scrape_timestamp": "2025-08-22 17:17:01",
-      "tweets_count": 21,
-      "new_tweets_count": 6,
-      "skipped_tweets_count": 0,
+      "handle": "AndrewYNg",
+      "url": "http://127.0.0.1:8080/AndrewYNg",
+      "scrape_timestamp": "2025-09-01 23:07:31",
+      "tweets_count": 3,
+      "new_tweets_count": 1,
+      "skipped_tweets_count": 17,
       "tweets": [
         {
-          "tweet_url": "/balajis/status/1947365217874416120#m",
-          "tweet_id": "1947365217874416120",
+          "tweet_url": "/AndrewYNg/status/1953097967361245251#m",
+          "tweet_id": "1953097967361245251",
           "is_retweet": false,
-          "is_pinned": true,
-          "author": "Balaji",
-          "username": "@balajis",
-          "date": "Jul 21",
-          "full_date": "Jul 21, 2025 · 6:37 PM UTC",
-          "text": "Come to Singapore on October 3.ns.com/conference2025",
+          "is_pinned": false,
+          "author": "Andrew Ng",
+          "username": "@AndrewYNg",
+          "date": "Aug 6",
+          "full_date": "Aug 6, 2025 · 2:16 PM UTC",
+          "text": "I'm thrilled to announce the definitive course on Claude Code, created with@AnthropicAIand taught by Elie Schoppik@eschoppik. If you want to use highly agentic coding - where AI works autonomously for many minutes or longer, not just completing code snippets - this is it.\n\nClaude Code has been a game-changer for many developers (including me!), but there's real depth to using it well. This comprehensive course covers everything from fundamentals to advanced patterns.\n\nAfter this short course, you'll be able to:\n- Orchestrate multiple Claude subagents to work on different parts of your codebase simultaneously\n- Tag Claude in GitHub issues and have it autonomously create, review, and merge pull requests\n- Transform messy Jupyter notebooks into clean, production-ready dashboards\n- Use MCP tools like Playwright so Claude can see what's wrong with your UI and fix it autonomously\n\nWhether you're new to Claude Code or already using it, you'll discover powerful capabilities that can fundamentally change how you build software.\n\nI'm very excited about what agentic coding lets everyone now do. Please take this course!deeplearning.ai/short-course…",
           "quoted_tweet": null,
           "media": [
             {
               "type": "image",
-              "src": "/pic/media%2FGwZuBbEbEAIyezg.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            }
-          ],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "balajis",
-          "importance_score": 9,
-          "importance_reason": "Pinned tweet (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/brian_armstrong/status/1959003696693748055#m",
-          "tweet_id": "1959003696693748055",
-          "is_retweet": true,
-          "retweet_info": "Balaji retweeted",
-          "is_pinned": false,
-          "author": "Brian Armstrong",
-          "username": "@brian_armstrong",
-          "date": "2h",
-          "full_date": "Aug 22, 2025 · 9:24 PM UTC",
-          "text": "Fun fact: as CTO Balaji was the person most responsible for driving the launch of USDC on the Coinbase side.\n\nHere's the launch video:",
-          "quoted_tweet": {
-            "author": "Brian Armstrong",
-            "username": "@brian_armstrong",
-            "date": "8h",
-            "text": "The one and only, legendary,@balajisHe is like batman, will fight crime in any organization, through any means necessary (even unsanctioned methods).",
-            "link": "/brian_armstrong/status/1958914464339959998#m"
-          },
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/amplify_video_thumb%2F1959003435862564865%2Fimg%2Fjhwx_r4iDIJSj8mC.jpg%3Fname%3Dsmall%26format%3Dwebp",
+              "src": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp",
               "alt": ""
             },
             {
               "type": "video",
-              "thumbnail": "/pic/amplify_video_thumb%2F1959003435862564865%2Fimg%2Fjhwx_r4iDIJSj8mC.jpg%3Fname%3Dsmall%26format%3Dwebp"
-            }
-          ],
-          "stats": {},
-          "handle": "balajis",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/balajis/status/1958284707025883334#m",
-          "tweet_id": "1958284707025883334",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Balaji",
-          "username": "@balajis",
-          "date": "Aug 20",
-          "full_date": "Aug 20, 2025 · 9:47 PM UTC",
-          "text": "What are the largest economies in the world by GDP-PPP?\n\n(1) China 🇨🇳 \n(2) USA 🇺🇸 \n(3) India 🇮🇳 \n(4) Russia 🇷🇺 \n\nDemocrats fought Russia and Republicans are now antagonizing India. But it’s not particularly smart to fight the RIC of BRICS at the same time.",
-          "quoted_tweet": null,
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/media%2FGy05juxaoAA_Ep2.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
+              "thumbnail": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp"
             }
           ],
           "stats": {
+            "retweets": "",
             "likes": ""
           },
-          "handle": "balajis",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/balajis/status/1958218168499057115#m",
-          "tweet_id": "1958218168499057115",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Balaji",
-          "username": "@balajis",
-          "date": "Aug 20",
-          "full_date": "Aug 20, 2025 · 5:22 PM UTC",
-          "text": "TRADEOFFS DO EXIST\n\nSeveral things are true at the same time.\n\n(1) First, woke is cancer, and US universities are one of the primary sources of this cancer. They are the furthest left organizations in the world, and still radically out of sync with the people who fund them. This just came out in Nature:\n\n(2) So, the use of state power against wokeness is probably the only way to course correct, because academic wokeness is funded by the state. State power could be like chemotherapy against the cancer.\n\n(3) However, just as it is possible for the Western university to die from cancer, it is also possible for the university to die from chemotherapy. Particularly if no distinction is made between healthy and unhealthy tissue.\n\n(4) And the recent academic budget cuts are hitting the relatively healthy STEM part of academia, as opposed to the completely unhealthy humanities part.\n\n(5) That’s not to say that STEM hasn’t been corrupted by woke too. It has, particularly in medicine. But there was still some residual healthy tissue, some very smart people doing good things.\n\n(6) One of the world’s greatest living mathematicians (Terry Tao) was among that healthy tissue. If you read his blog, he really isn’t a far leftist. True, he posted against Trump once in 2016 (but so did much of the current admin). And yes, Tao did sign a letter during the BLM riots of 2020 (but even Trump at the time felt compelled to “honor the memory of George Floyd\").\n\n(7) Remember, the social pressure to fit in at UCLA during BLM was even greater than society at large. Wokes, like communists, demand public pledges of fealty to stop harassing you. That doesn’t mean those public pledges are always deeply felt or sincere. Indeed, it is the relatively apolitical STEM guys like Tao who often go along to get along.\n\n(8) Anyway, if one can’t or won’t make distinctions between a Terry Tao and a genuinely far left humanities prof, you will lose all the healthy tissue. The chemotherapy will kill the host. And four hundred years of Harvard's rise will come to an end.\n\n(9) That said, to steelman the MAGA side, one can actually make the case that the end of Harvard (and the Western university system writ broadly) actually is net good for the world! After all, US universities exported many bad ideas globally, particularly recently. From the claim that XX/XY chromosomes have no relevance in medicine, to the idea that prestigious citations count for more than independent replication, to the decades of attacks on white people simply for being white.\n\n(10) And, to further steelman the right, it is of course hard and time-consuming to separate the innocent from the guilty among the faculty. Indeed it may not even be possible in the time available, given that MAGA may lose political power in a few years. So perhaps it’s now or never.\n\n(11) Fine. But nature abhors a vacuum. And if you leave a smoking crater where Harvard was, that vacuum will currently get filled by China (with certainty) and perhaps the Internet (if we’re lucky). For example:\n\n(12) Anyway, I’m sympathetic to both the argument that woke is cancer and needed treatment and the reality that many talented individuals are becoming collateral damage here.\n\n(13) We’ve seen something similar before. In the early 1900s, Europe was the unquestioned leader in science. But then, after all the fighting between right and left, science left for the stable terrain of America. The graph below quantifies this for the physics Nobel:\n\n(14) History may repeat. In the early 2000s, America was similarly the unquestioned global leader in science. But after all the fighting between right and left, science is digitally decentralizing to the Internet (with professors becoming tech founders) and physically recentralizing in Asia (with China taking over traditional academia):\n\n(15) In other words, tradeoffs do exist. It might still be worth it for MAGA to wreck US academia, to break the source of woke in the few years they have power, regardless of what collateral damage occurs. It'd be an immensely altruistic move, like throwing the one ring into the fires of Mount Doom. MAGA would essentially be saving the world from Western leftism by shutting down all sources of blue power, like the universities and the US dollar, and thereby ending the empire.\n\n(16) It'd be like Gorbachev and the Russians shutting down the USSR, thereby ending the careers of many brilliant Soviet scientists (and Russia's own predominance on the world stage) in the process of shutting down a far left empire.\n\nGorbachev saved the world from communism at the expense of Russian power. MAGA may similarly save the world from wokism at the expense of American power. That may not be what they intend to do, but it is arguably what they're actually doing.",
-          "quoted_tweet": {
-            "author": "tantum",
-            "username": "@QuasLacrimas",
-            "date": "Aug 20",
-            "text": "I'm not going to say anything moralizing about whether Professor Tao should/shouldn't, will/won't go to Tsinghua.\n\nI'll just say that if an offer like that ever comes, and he accepts it, none of his colleagues at Tsinghua will be attacking Chinese society on race, gender and sexuality grounds. Nor will they be supporting a mass student protest movement that advocates bringing political violence to China. Nor will they be threatening to shut down their research to protest the CCP denying certain foreigners visas for political reasons.\n\nI'm not saying that's good or bad. I'm just saying it will never happen at Tsinghua.\n\nAnyone who is upset that the US government is sanctioning universities for anti-American agendas, and would rather work in China than have his own university follow (pro-American) government guidance, isn't against government control of universities. That would be absurd in the extreme. He would be in favor of very strict government control of universities, students, and faculty, so long as it is a control by a government he feels loyalty to.",
-            "link": "/QuasLacrimas/status/1957960430766133563#m"
-          },
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/media%2FGyz9Cn3aAAMxSKi.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            },
-            {
-              "type": "image",
-              "src": "/pic/media%2FGyz2dxlaAAM0OmW.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            },
-            {
-              "type": "image",
-              "src": "/pic/media%2FGyz45BZbkAAAwE4.png%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            },
-            {
-              "type": "image",
-              "src": "/pic/media%2FGyz53e2aAAE3tov.png%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            }
-          ],
-          "stats": {},
-          "handle": "balajis",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/balajis/status/1957740572845961324#m",
-          "tweet_id": "1957740572845961324",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Balaji",
-          "username": "@balajis",
-          "date": "Aug 19",
-          "full_date": "Aug 19, 2025 · 9:45 AM UTC",
-          "text": "Don’t be surprised if China offers Terry Tao the chair of the mathematics department at Tsinghua University.\n\nAnd all the funding he wants.\n\nBecause it is possible for the US to fumble the bag as the destination for global talent. And indeed it is fumbling that bag right now.",
-          "quoted_tweet": {
-            "author": "Paul Graham",
-            "username": "@paulg",
-            "date": "Aug 3",
-            "text": "The Trump administration has suspended the funding of Terence Tao and the Institute for Pure and Applied Mathematics at UCLA.",
-            "link": "/paulg/status/1951996478555357530#m"
-          },
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/media%2FGxbiWwcaoAAisK-.png%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            }
-          ],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "balajis",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/balajis/status/1957736491259494842#m",
-          "tweet_id": "1957736491259494842",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Balaji",
-          "username": "@balajis",
-          "date": "Aug 19",
-          "full_date": "Aug 19, 2025 · 9:28 AM UTC",
-          "text": "It’s extraordinarily difficult to build something like SpaceX even in peacetime.\n\nIf huge swaths of society are irrationally trying to get you, the difficulty rises further by orders of magnitude.\n\nMeanwhile, China just plows ahead relentlessly.",
-          "quoted_tweet": {
-            "author": "Eric Berger",
-            "username": "@SciGuySpace",
-            "date": "Aug 18",
-            "text": "I went there. Because at this point, it's difficult to come to any other conclusion.arstechnica.com/space/2025/0…",
-            "link": "/SciGuySpace/status/1957495041544364338#m"
-          },
-          "media": [],
-          "stats": {},
-          "handle": "balajis",
+          "handle": "AndrewYNg",
           "importance_score": 7,
           "importance_reason": "Company keyword (AI not available - using keywords)",
           "ai_provider": "gpt"
         }
       ],
-      "filtered_out_count": 15,
+      "filtered_out_count": 2,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
         "min_score": 7,
-        "context": "Balaji Srinivasan content (crypto, tech trends, geopolitics, innovation)"
+        "context": "andrew ng"
+      }
+    },
+    {
+      "handle": "Emerj",
+      "url": "http://127.0.0.1:8080/Emerj",
+      "scrape_timestamp": "2025-09-01 23:07:32",
+      "tweets_count": 6,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 14,
+      "tweets": [],
+      "filtered_out_count": 6,
+      "ai_classification_enabled": true,
+      "ai_provider": "gpt",
+      "handle_config": {
+        "min_score": 7,
+        "context": "Emerj"
+      }
+    },
+    {
+      "handle": "markgurman",
+      "url": "http://127.0.0.1:8080/markgurman",
+      "scrape_timestamp": "2025-09-01 23:07:33",
+      "tweets_count": 5,
+      "new_tweets_count": 4,
+      "skipped_tweets_count": 14,
+      "tweets": [
+        {
+          "tweet_url": "/markgurman/status/1959618085012570179#m",
+          "tweet_id": "1959618085012570179",
+          "is_retweet": false,
+          "is_pinned": true,
+          "author": "Mark Gurman",
+          "username": "@markgurman",
+          "date": "Aug 24",
+          "full_date": "Aug 24, 2025 · 2:05 PM UTC",
+          "text": "Power On: Apple is set to kick off three-year plan to reinvent the iPhone, including three major new models in a row: the iPhone Air, foldable iPhone and 20th anniversary iPhone.bloomberg.com/news/newslette…",
+          "quoted_tweet": null,
+          "media": [],
+          "stats": {
+            "likes": ""
+          },
+          "handle": "markgurman",
+          "importance_score": 9,
+          "importance_reason": "Pinned tweet (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        },
+        {
+          "tweet_url": "/markgurman/status/1959999529052516763#m",
+          "tweet_id": "1959999529052516763",
+          "is_retweet": false,
+          "is_pinned": false,
+          "author": "Mark Gurman",
+          "username": "@markgurman",
+          "date": "Aug 25",
+          "full_date": "Aug 25, 2025 · 3:21 PM UTC",
+          "text": "Elon Musk sues Apple and OpenAIbloomberg.com/news/articles/…",
+          "quoted_tweet": {
+            "author": "Mark Gurman",
+            "username": "@markgurman",
+            "date": "Aug 12",
+            "text": "Apple on@elonmusk’s claims: \"The App Store is designed to be fair and free of bias. We feature thousands of apps through charts, algorithmic recommendations, and curated lists selected by experts using objective criteria.”bloomberg.com/news/articles/…",
+            "link": "/markgurman/status/1955383759853007198#m"
+          },
+          "media": [],
+          "stats": {},
+          "handle": "markgurman",
+          "importance_score": 7,
+          "importance_reason": "Company keyword (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        },
+        {
+          "tweet_url": "/markgurman/status/1959718122367463501#m",
+          "tweet_id": "1959718122367463501",
+          "is_retweet": false,
+          "is_pinned": false,
+          "author": "Mark Gurman",
+          "username": "@markgurman",
+          "date": "Aug 24",
+          "full_date": "Aug 24, 2025 · 8:43 PM UTC",
+          "text": "It’s going to be the most exciting Apple launch for tech fans in many, many years if you ask me.",
+          "quoted_tweet": {
+            "author": "Max Jambor",
+            "username": "@MaxJmb",
+            "date": "Aug 24",
+            "text": "apple entering the foldable market is a big step and I’m all in for it",
+            "link": "/MaxJmb/status/1959717705218724232#m"
+          },
+          "media": [],
+          "stats": {
+            "likes": ""
+          },
+          "handle": "markgurman",
+          "importance_score": 8,
+          "importance_reason": "High priority keyword (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        },
+        {
+          "tweet_url": "/markgurman/status/1959717192758706516#m",
+          "tweet_id": "1959717192758706516",
+          "is_retweet": false,
+          "is_pinned": false,
+          "author": "Mark Gurman",
+          "username": "@markgurman",
+          "date": "Aug 24",
+          "full_date": "Aug 24, 2025 · 8:39 PM UTC",
+          "text": "Apple’s first foldable phone will be book-style, use Touch ID not Face ID, use a C2 modem, have four total cameras and only use eSIM. The screen’s crease is less visible than current foldables. Recently, Apple changed display from on-cell to in-cell touch.bloomberg.com/news/newslette…",
+          "quoted_tweet": null,
+          "media": [],
+          "stats": {
+            "likes": ""
+          },
+          "handle": "markgurman",
+          "importance_score": 7,
+          "importance_reason": "Company keyword (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        }
+      ],
+      "filtered_out_count": 1,
+      "ai_classification_enabled": true,
+      "ai_provider": "gpt",
+      "handle_config": {
+        "min_score": 7,
+        "context": "markgurman"
+      }
+    },
+    {
+      "handle": "TechCrunch",
+      "url": "http://127.0.0.1:8080/TechCrunch",
+      "scrape_timestamp": "2025-09-01 23:07:34",
+      "tweets_count": 7,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 13,
+      "tweets": [],
+      "filtered_out_count": 7,
+      "ai_classification_enabled": true,
+      "ai_provider": "gpt",
+      "handle_config": {
+        "min_score": 8,
+        "context": "TechCrunch"
+      }
+    },
+    {
+      "handle": "FT",
+      "url": "http://127.0.0.1:8080/FT",
+      "scrape_timestamp": "2025-09-01 23:07:35",
+      "tweets_count": 7,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 14,
+      "tweets": [],
+      "filtered_out_count": 7,
+      "ai_classification_enabled": true,
+      "ai_provider": "gpt",
+      "handle_config": {
+        "min_score": 8,
+        "context": "FT"
+      }
+    },
+    {
+      "handle": "JustinWolfers",
+      "url": "http://127.0.0.1:8080/JustinWolfers",
+      "scrape_timestamp": "2025-09-01 23:07:36",
+      "tweets_count": 1,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 19,
+      "tweets": [],
+      "filtered_out_count": 1,
+      "ai_classification_enabled": true,
+      "ai_provider": "gpt",
+      "handle_config": {
+        "min_score": 8,
+        "context": "JustinWolfers"
+      }
+    },
+    {
+      "handle": "AP_Politics",
+      "url": "http://127.0.0.1:8080/AP_Politics",
+      "scrape_timestamp": "2025-09-01 23:07:37",
+      "tweets_count": 3,
+      "new_tweets_count": 3,
+      "skipped_tweets_count": 17,
+      "tweets": [
+        {
+          "tweet_url": "/AP_Politics/status/1884393677390234085#m",
+          "tweet_id": "1884393677390234085",
+          "is_retweet": false,
+          "is_pinned": false,
+          "author": "AP Politics",
+          "username": "@AP_Politics",
+          "date": "Jan 29",
+          "full_date": "Jan 29, 2025 · 12:10 AM UTC",
+          "text": "BREAKING: Randy Fine wins Republican nomination for U.S. House in Florida's 6th Congressional District special primary election.#APRaceCallat 7:09 p.m. EST.apnews.com/hub/election-2024",
+          "quoted_tweet": null,
+          "media": [],
+          "stats": {},
+          "handle": "AP_Politics",
+          "importance_score": 8,
+          "importance_reason": "High priority keyword (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        },
+        {
+          "tweet_url": "/AP_Politics/status/1859423977568969138#m",
+          "tweet_id": "1859423977568969138",
+          "is_retweet": false,
+          "is_pinned": false,
+          "author": "AP Politics",
+          "username": "@AP_Politics",
+          "date": "21 Nov 2024",
+          "full_date": "Nov 21, 2024 · 2:29 AM UTC",
+          "text": "BREAKING: Republican Nick Begich wins election to U.S. House in Alaska's at-large Congressional District, beating incumbent Mary Peltola.#APRaceCallat 9:28 p.m. EST.apnews.com/hub/election-2024",
+          "quoted_tweet": null,
+          "media": [],
+          "stats": {},
+          "handle": "AP_Politics",
+          "importance_score": 8,
+          "importance_reason": "High priority keyword (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        },
+        {
+          "tweet_url": "/AP_Politics/status/1857584864259670215#m",
+          "tweet_id": "1857584864259670215",
+          "is_retweet": false,
+          "is_pinned": false,
+          "author": "AP Politics",
+          "username": "@AP_Politics",
+          "date": "16 Nov 2024",
+          "full_date": "Nov 16, 2024 · 12:41 AM UTC",
+          "text": "BREAKING: Democrat Josh Harder wins reelection to U.S. House in California's 9th Congressional District.#APRaceCallat 7:40 p.m. EST.apnews.com/hub/election-2024",
+          "quoted_tweet": null,
+          "media": [],
+          "stats": {
+            "likes": ""
+          },
+          "handle": "AP_Politics",
+          "importance_score": 8,
+          "importance_reason": "High priority keyword (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        }
+      ],
+      "filtered_out_count": 0,
+      "ai_classification_enabled": true,
+      "ai_provider": "gpt",
+      "handle_config": {
+        "min_score": 8,
+        "context": "AP_Politics"
       }
     }
   ],
   "combined_tweets": [
-    {
-      "tweet_url": "/karpathy/status/1617979122625712128#m",
-      "tweet_id": "1617979122625712128",
-      "is_retweet": false,
-      "is_pinned": true,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "24 Jan 2023",
-      "full_date": "Jan 24, 2023 · 8:14 PM UTC",
-      "text": "The hottest new programming language is English",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "replies": "",
-        "retweets": "",
-        "quotes": "",
-        "likes": ""
-      },
-      "handle": "karpathy",
-      "importance_score": 9,
-      "importance_reason": "Pinned tweet (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/naval/status/1002103360646823936#m",
-      "tweet_id": "1002103360646823936",
-      "is_retweet": false,
-      "is_pinned": true,
-      "author": "Naval",
-      "username": "@naval",
-      "date": "31 May 2018",
-      "full_date": "May 31, 2018 · 8:23 AM UTC",
-      "text": "How to Get Rich (without getting lucky):",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "replies": "",
-        "retweets": "",
-        "quotes": "",
-        "likes": ""
-      },
-      "handle": "naval",
-      "importance_score": 9,
-      "importance_reason": "Pinned tweet (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
     {
       "tweet_url": "/pmarca/status/1902724994607570975#m",
       "tweet_id": "1902724994607570975",
@@ -837,79 +556,23 @@
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/balajis/status/1947365217874416120#m",
-      "tweet_id": "1947365217874416120",
+      "tweet_url": "/markgurman/status/1959618085012570179#m",
+      "tweet_id": "1959618085012570179",
       "is_retweet": false,
       "is_pinned": true,
-      "author": "Balaji",
-      "username": "@balajis",
-      "date": "Jul 21",
-      "full_date": "Jul 21, 2025 · 6:37 PM UTC",
-      "text": "Come to Singapore on October 3.ns.com/conference2025",
+      "author": "Mark Gurman",
+      "username": "@markgurman",
+      "date": "Aug 24",
+      "full_date": "Aug 24, 2025 · 2:05 PM UTC",
+      "text": "Power On: Apple is set to kick off three-year plan to reinvent the iPhone, including three major new models in a row: the iPhone Air, foldable iPhone and 20th anniversary iPhone.bloomberg.com/news/newslette…",
       "quoted_tweet": null,
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGwZuBbEbEAIyezg.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        }
-      ],
+      "media": [],
       "stats": {
         "likes": ""
       },
-      "handle": "balajis",
+      "handle": "markgurman",
       "importance_score": 9,
       "importance_reason": "Pinned tweet (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/sama/status/1957849495733166587#m",
-      "tweet_id": "1957849495733166587",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Sam Altman",
-      "username": "@sama",
-      "date": "Aug 19",
-      "full_date": "Aug 19, 2025 · 4:57 PM UTC",
-      "text": "ChatGPT Go launches in India!\n\nLooking forward to making ChatGPT more affordable in India first, and then learning from feedback to expand to other countries.",
-      "quoted_tweet": {
-        "author": "Nick Turley",
-        "username": "@nickaturley",
-        "date": "Aug 19",
-        "text": "We just launched ChatGPT Go in India, a new subscription tier that gives users in India more access to our most popular features: 10x higher message limits, 10x more image generations, 10x more file uploads, and 2x longer memory compared with our free tier. All for Rs. 399. 🇮🇳",
-        "link": "/nickaturley/status/1957613818902892985#m"
-      },
-      "media": [],
-      "stats": {
-        "replies": "",
-        "retweets": "",
-        "likes": ""
-      },
-      "handle": "sama",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/sama/status/1954703747495649670#m",
-      "tweet_id": "1954703747495649670",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Sam Altman",
-      "username": "@sama",
-      "date": "Aug 11",
-      "full_date": "Aug 11, 2025 · 12:37 AM UTC",
-      "text": "If you have been following the GPT-5 rollout, one thing you might be noticing is how much of an attachment some people have to specific AI models. It feels different and stronger than the kinds of attachment people have had to previous kinds of technology (and so suddenly deprecating old models that users depended on in their workflows was a mistake).\n\nThis is something we’ve been closely tracking for the past year or so but still hasn’t gotten much mainstream attention (other than when we released an update to GPT-4o that was too sycophantic).\n\n(This is just my current thinking, and not yet an official OpenAI position.)\n\nPeople have used technology including AI in self-destructive ways; if a user is in a mentally fragile state and prone to delusion, we do not want the AI to reinforce that. Most users can keep a clear line between reality and fiction or role-play, but a small percentage cannot. We value user freedom as a core principle, but we also feel responsible in how we introduce new technology with new risks.\n\nEncouraging delusion in a user that is having trouble telling the difference between reality and fiction is an extreme case and it’s pretty clear what to do, but the concerns that worry me most are more subtle. There are going to be a lot of edge cases, and generally we plan to follow the principle of “treat adult users like adults”, which in some cases will include pushing back on users to ensure they are getting what they really want.\n\nA lot of people effectively use ChatGPT as a sort of therapist or life coach, even if they wouldn’t describe it that way. This can be really good! A lot of people are getting value from it already today.\n\nIf people are getting good advice, leveling up toward their own goals, and their life satisfaction is increasing over years, we will be proud of making something genuinely helpful, even if they use and rely on ChatGPT a lot. If, on the other hand, users have a relationship with ChatGPT where they think they feel better after talking but they’re unknowingly nudged away from their longer term well-being (however they define it), that’s bad. It’s also bad, for example, if a user wants to use ChatGPT less and feels like they cannot.\n\nI can imagine a future where a lot of people really trust ChatGPT’s advice for their most important decisions. Although that could be great, it makes me uneasy. But I expect that it is coming to some degree, and soon billions of people may be talking to an AI in this way. So we (we as in society, but also we as in OpenAI) have to figure out how to make it a big net positive.\n\nThere are several reasons I think we have a good shot at getting this right. We have much better tech to help us measure how we are doing than previous generations of technology had. For example, our product can talk to users to get a sense for how they are doing with their short- and long-term goals, we can explain sophisticated and nuanced issues to our models, and much more.",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "replies": "",
-        "retweets": "",
-        "likes": ""
-      },
-      "handle": "sama",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
@@ -969,409 +632,174 @@
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/karpathy/status/1940181840201228384#m",
-      "tweet_id": "1940181840201228384",
+      "tweet_url": "/markgurman/status/1959718122367463501#m",
+      "tweet_id": "1959718122367463501",
       "is_retweet": false,
       "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Jul 1",
-      "full_date": "Jul 1, 2025 · 10:52 PM UTC",
-      "text": "Test-based certification is the only way forward in food, eager to see more over time.\n\nFood is not simple anymore - it is a complex, industrial product with global supply and processing chains. Contamination can be introduced in many stages along the way from farming to harvest, processing, packaging, transport and preparation. Examples include pesticides, nitrates, heavy metals, plastics, bacteria, etc etc. So it's not just about what food to eat, it's about which specific food item SKU, from which specific supplier, and the only way to know is to test. E.g. these two cat foods look the same, the ingredients might look the same, but the one on the left is 1000X higher in glyphosate and 100X in lead. Or e.g. this baby food formula or turmeric is loaded with heavy metals, this canned seafood, your local boba or this milk brand is seeped in plastics, or this breakfast cereal way way too high in glyphosate (real examples).\n\nI used to think that the FDA exercises oversight but the reality is that it doesn't have anywhere near enough resources to do it thoroughly and their focus is a lot more on e.g. acute microbial threats (like Salmonella, E. coli, Listeria, ...) that immediately hospitalize people, less on the rapidly growing diversity of compounds that may or may not deteriorate health over decades and that are basically treated as innocent until proven guilty under GRAS and so on. Meanwhile, the public health macro picture looks not so great - obesity up, type-2 diabetes up, fertility down (sperm count/motility), weird endocrine trends (e.g. testosterone down in men), depression and anxiety up... It wouldn't shock me if modern industrial food turns out to be a major contributor.",
+      "author": "Mark Gurman",
+      "username": "@markgurman",
+      "date": "Aug 24",
+      "full_date": "Aug 24, 2025 · 8:43 PM UTC",
+      "text": "It’s going to be the most exciting Apple launch for tech fans in many, many years if you ask me.",
       "quoted_tweet": {
-        "author": "Bryan Johnson",
-        "username": "@bryan_johnson",
-        "date": "Jul 1",
-        "text": "Something new and exciting is here\n\nDog and cat food toxin testing\n+ fund your pet's food\n+ if brand claims results, your money comes back \n+ fund more tests\n\nTogether we can rapidly test all US dog and cat food. \n\nInitial results \nBlueprint Quantified tested 22 mass-market products (12 dog foods, 10 cat foods) from 14 US national brands. \n\nGlyphosate\n+ Detected in 21 of 22 products (95%).\n+ 8 products hit the upper detection limit of 1,000 ppm\n+ That’s 118 mg glyphosate in a 118 g serving, equivalent to maximum tolerable exposure for 68 kg human \n+ Lowest non-zero hit: 0.04 ppm (Merrick Chicken & Sweet Potato)\n\nHeavy metals\n+ mercury, lead, arsenic, and cadmium were detected in every sample\n+ arsenic: up to 0.238 ppm / 238 ppb (Sheba Seafood Wet Cat Food). 8.9 mcg per 38 g serving\n+ cadmium: up to 0.084 ppm / 83.6 ppb (Royal Canin Medium Adult Dog).\n+ lead: up to 0.343 ppm / 343 ppb (Royal Canin Indoor Adult Cat), 12.9 mcg of lead per 38 g serving  (26x California Prop 65’s daily limit (0.5 mcg))\n+ mercury: up to 0.012 ppm / 11.8 ppb (Sheba Seafood Wet Cat Food)\n\nTop heavy metal toxicity:\n+ Wellness CORE+ Original (Dog): 43.4 µg/serving\n+ Nutro Natural Choice Small Breed (Dog): 42.6 µg/serving\n+ Blue Buffalo Homestyle Senior (Dog, wet): 35.6 µg/serving\n+ Royal Canin Size Health Medium Dog: 33.7 µg/serving\n+ Pedigree Small Dog “Grilled Steak & Veg” (Dog): 27.9 µg µg/serving\n\nCleanest product\nPurina Friskies Surfin’ & Turfin’ (Cat) had non-detectable glyphosate, and the second lowest total heavy metals.",
-        "link": "/bryan_johnson/status/1940112033493786979#m"
+        "author": "Max Jambor",
+        "username": "@MaxJmb",
+        "date": "Aug 24",
+        "text": "apple entering the foldable market is a big step and I’m all in for it",
+        "link": "/MaxJmb/status/1959717705218724232#m"
       },
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGuym1p0XIAAfMzh.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        }
-      ],
+      "media": [],
       "stats": {
         "likes": ""
       },
-      "handle": "karpathy",
+      "handle": "markgurman",
       "importance_score": 8,
       "importance_reason": "High priority keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/naval/status/1952519682256466329#m",
-      "tweet_id": "1952519682256466329",
+      "tweet_url": "/AP_Politics/status/1884393677390234085#m",
+      "tweet_id": "1884393677390234085",
       "is_retweet": false,
       "is_pinned": false,
-      "author": "Naval",
-      "username": "@naval",
-      "date": "Aug 4",
-      "full_date": "Aug 4, 2025 · 11:59 PM UTC",
-      "text": "nav.al/hiringNivi: We’re hiring an editor for the Naval Podcast, and Naval is also hiring a chief of staff. If you’re not interested in either of these, you can move on to the next episode. Let me give you some details on both of them.\n\nFirst, the editor for the Naval Podcast, which as you already know, is the most timeless and overproduced podcast in human history. The editor will be primarily editing the podcast in Descript. They’ll be editing the transcripts for clarity and posting videos to social media to get Naval’s ideas into the hands of 8 billion people on planet Earth. If you’re already working on another podcast, don’t hesitate to contact us. You’ll learn more with us.\n\nIf you’re more of a producer than an editor, feel free to get in touch anyway. We are open to new ideas. This is a part-time role, but there’s infinite room to get into more challenging and creative problems. You don’t need experience, but you need to be extremely smart and high-slope. Here’s some more details on what we’re looking for.\n\nYou must have a DSM-5 level attention to detail. You must be a good writer with a nose for design, and you must get things the first time you hear them. Please send less than 750 characters about yourself to podcast@nav.al. Include links to your best work and your smartest tweet. Tell us about a hard problem you’ve solved, new knowledge you’re creating for fun, and share something you’ve made with AI. The shorter your email, the better. \n\nThanks for considering us.\n\nChief of Staff\n\nOn to the second position. Naval is also hiring a chief of staff to work directly with him. This is independent of the podcast. You’ll be working with him to solve problems, including traveling the world to recruit engineers, researching investments, throwing events, personal tasks, and anything else he needs done.\n\nThe work will range from prestigious to pauperian. You must be extremely technical, always working, based in San Francisco and willing to travel anytime. The right person probably has a couple years of work under their belt and wants to start a company one day. Again, please send under 750 characters about yourself to chief@nav.al.\n\nInclude links to your best work and your smartest tweet. Tell us about a hard problem you’ve solved, new knowledge you’re creating for fun, and share something you’ve made with AI. The shorter your message, the better.\n\nThanks for considering this.",
+      "author": "AP Politics",
+      "username": "@AP_Politics",
+      "date": "Jan 29",
+      "full_date": "Jan 29, 2025 · 12:10 AM UTC",
+      "text": "BREAKING: Randy Fine wins Republican nomination for U.S. House in Florida's 6th Congressional District special primary election.#APRaceCallat 7:09 p.m. EST.apnews.com/hub/election-2024",
       "quoted_tweet": null,
       "media": [],
       "stats": {},
-      "handle": "naval",
+      "handle": "AP_Politics",
       "importance_score": 8,
       "importance_reason": "High priority keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/brian_armstrong/status/1959003696693748055#m",
-      "tweet_id": "1959003696693748055",
-      "is_retweet": true,
-      "retweet_info": "Balaji retweeted",
+      "tweet_url": "/AP_Politics/status/1859423977568969138#m",
+      "tweet_id": "1859423977568969138",
+      "is_retweet": false,
       "is_pinned": false,
-      "author": "Brian Armstrong",
-      "username": "@brian_armstrong",
-      "date": "2h",
-      "full_date": "Aug 22, 2025 · 9:24 PM UTC",
-      "text": "Fun fact: as CTO Balaji was the person most responsible for driving the launch of USDC on the Coinbase side.\n\nHere's the launch video:",
-      "quoted_tweet": {
-        "author": "Brian Armstrong",
-        "username": "@brian_armstrong",
-        "date": "8h",
-        "text": "The one and only, legendary,@balajisHe is like batman, will fight crime in any organization, through any means necessary (even unsanctioned methods).",
-        "link": "/brian_armstrong/status/1958914464339959998#m"
+      "author": "AP Politics",
+      "username": "@AP_Politics",
+      "date": "21 Nov 2024",
+      "full_date": "Nov 21, 2024 · 2:29 AM UTC",
+      "text": "BREAKING: Republican Nick Begich wins election to U.S. House in Alaska's at-large Congressional District, beating incumbent Mary Peltola.#APRaceCallat 9:28 p.m. EST.apnews.com/hub/election-2024",
+      "quoted_tweet": null,
+      "media": [],
+      "stats": {},
+      "handle": "AP_Politics",
+      "importance_score": 8,
+      "importance_reason": "High priority keyword (AI not available - using keywords)",
+      "ai_provider": "gpt"
+    },
+    {
+      "tweet_url": "/AP_Politics/status/1857584864259670215#m",
+      "tweet_id": "1857584864259670215",
+      "is_retweet": false,
+      "is_pinned": false,
+      "author": "AP Politics",
+      "username": "@AP_Politics",
+      "date": "16 Nov 2024",
+      "full_date": "Nov 16, 2024 · 12:41 AM UTC",
+      "text": "BREAKING: Democrat Josh Harder wins reelection to U.S. House in California's 9th Congressional District.#APRaceCallat 7:40 p.m. EST.apnews.com/hub/election-2024",
+      "quoted_tweet": null,
+      "media": [],
+      "stats": {
+        "likes": ""
       },
+      "handle": "AP_Politics",
+      "importance_score": 8,
+      "importance_reason": "High priority keyword (AI not available - using keywords)",
+      "ai_provider": "gpt"
+    },
+    {
+      "tweet_url": "/AndrewYNg/status/1953097967361245251#m",
+      "tweet_id": "1953097967361245251",
+      "is_retweet": false,
+      "is_pinned": false,
+      "author": "Andrew Ng",
+      "username": "@AndrewYNg",
+      "date": "Aug 6",
+      "full_date": "Aug 6, 2025 · 2:16 PM UTC",
+      "text": "I'm thrilled to announce the definitive course on Claude Code, created with@AnthropicAIand taught by Elie Schoppik@eschoppik. If you want to use highly agentic coding - where AI works autonomously for many minutes or longer, not just completing code snippets - this is it.\n\nClaude Code has been a game-changer for many developers (including me!), but there's real depth to using it well. This comprehensive course covers everything from fundamentals to advanced patterns.\n\nAfter this short course, you'll be able to:\n- Orchestrate multiple Claude subagents to work on different parts of your codebase simultaneously\n- Tag Claude in GitHub issues and have it autonomously create, review, and merge pull requests\n- Transform messy Jupyter notebooks into clean, production-ready dashboards\n- Use MCP tools like Playwright so Claude can see what's wrong with your UI and fix it autonomously\n\nWhether you're new to Claude Code or already using it, you'll discover powerful capabilities that can fundamentally change how you build software.\n\nI'm very excited about what agentic coding lets everyone now do. Please take this course!deeplearning.ai/short-course…",
+      "quoted_tweet": null,
       "media": [
         {
           "type": "image",
-          "src": "/pic/amplify_video_thumb%2F1959003435862564865%2Fimg%2Fjhwx_r4iDIJSj8mC.jpg%3Fname%3Dsmall%26format%3Dwebp",
+          "src": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp",
           "alt": ""
         },
         {
           "type": "video",
-          "thumbnail": "/pic/amplify_video_thumb%2F1959003435862564865%2Fimg%2Fjhwx_r4iDIJSj8mC.jpg%3Fname%3Dsmall%26format%3Dwebp"
-        }
-      ],
-      "stats": {},
-      "handle": "balajis",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/balajis/status/1958284707025883334#m",
-      "tweet_id": "1958284707025883334",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Balaji",
-      "username": "@balajis",
-      "date": "Aug 20",
-      "full_date": "Aug 20, 2025 · 9:47 PM UTC",
-      "text": "What are the largest economies in the world by GDP-PPP?\n\n(1) China 🇨🇳 \n(2) USA 🇺🇸 \n(3) India 🇮🇳 \n(4) Russia 🇷🇺 \n\nDemocrats fought Russia and Republicans are now antagonizing India. But it’s not particularly smart to fight the RIC of BRICS at the same time.",
-      "quoted_tweet": null,
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGy05juxaoAA_Ep2.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        }
-      ],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "balajis",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/balajis/status/1958218168499057115#m",
-      "tweet_id": "1958218168499057115",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Balaji",
-      "username": "@balajis",
-      "date": "Aug 20",
-      "full_date": "Aug 20, 2025 · 5:22 PM UTC",
-      "text": "TRADEOFFS DO EXIST\n\nSeveral things are true at the same time.\n\n(1) First, woke is cancer, and US universities are one of the primary sources of this cancer. They are the furthest left organizations in the world, and still radically out of sync with the people who fund them. This just came out in Nature:\n\n(2) So, the use of state power against wokeness is probably the only way to course correct, because academic wokeness is funded by the state. State power could be like chemotherapy against the cancer.\n\n(3) However, just as it is possible for the Western university to die from cancer, it is also possible for the university to die from chemotherapy. Particularly if no distinction is made between healthy and unhealthy tissue.\n\n(4) And the recent academic budget cuts are hitting the relatively healthy STEM part of academia, as opposed to the completely unhealthy humanities part.\n\n(5) That’s not to say that STEM hasn’t been corrupted by woke too. It has, particularly in medicine. But there was still some residual healthy tissue, some very smart people doing good things.\n\n(6) One of the world’s greatest living mathematicians (Terry Tao) was among that healthy tissue. If you read his blog, he really isn’t a far leftist. True, he posted against Trump once in 2016 (but so did much of the current admin). And yes, Tao did sign a letter during the BLM riots of 2020 (but even Trump at the time felt compelled to “honor the memory of George Floyd\").\n\n(7) Remember, the social pressure to fit in at UCLA during BLM was even greater than society at large. Wokes, like communists, demand public pledges of fealty to stop harassing you. That doesn’t mean those public pledges are always deeply felt or sincere. Indeed, it is the relatively apolitical STEM guys like Tao who often go along to get along.\n\n(8) Anyway, if one can’t or won’t make distinctions between a Terry Tao and a genuinely far left humanities prof, you will lose all the healthy tissue. The chemotherapy will kill the host. And four hundred years of Harvard's rise will come to an end.\n\n(9) That said, to steelman the MAGA side, one can actually make the case that the end of Harvard (and the Western university system writ broadly) actually is net good for the world! After all, US universities exported many bad ideas globally, particularly recently. From the claim that XX/XY chromosomes have no relevance in medicine, to the idea that prestigious citations count for more than independent replication, to the decades of attacks on white people simply for being white.\n\n(10) And, to further steelman the right, it is of course hard and time-consuming to separate the innocent from the guilty among the faculty. Indeed it may not even be possible in the time available, given that MAGA may lose political power in a few years. So perhaps it’s now or never.\n\n(11) Fine. But nature abhors a vacuum. And if you leave a smoking crater where Harvard was, that vacuum will currently get filled by China (with certainty) and perhaps the Internet (if we’re lucky). For example:\n\n(12) Anyway, I’m sympathetic to both the argument that woke is cancer and needed treatment and the reality that many talented individuals are becoming collateral damage here.\n\n(13) We’ve seen something similar before. In the early 1900s, Europe was the unquestioned leader in science. But then, after all the fighting between right and left, science left for the stable terrain of America. The graph below quantifies this for the physics Nobel:\n\n(14) History may repeat. In the early 2000s, America was similarly the unquestioned global leader in science. But after all the fighting between right and left, science is digitally decentralizing to the Internet (with professors becoming tech founders) and physically recentralizing in Asia (with China taking over traditional academia):\n\n(15) In other words, tradeoffs do exist. It might still be worth it for MAGA to wreck US academia, to break the source of woke in the few years they have power, regardless of what collateral damage occurs. It'd be an immensely altruistic move, like throwing the one ring into the fires of Mount Doom. MAGA would essentially be saving the world from Western leftism by shutting down all sources of blue power, like the universities and the US dollar, and thereby ending the empire.\n\n(16) It'd be like Gorbachev and the Russians shutting down the USSR, thereby ending the careers of many brilliant Soviet scientists (and Russia's own predominance on the world stage) in the process of shutting down a far left empire.\n\nGorbachev saved the world from communism at the expense of Russian power. MAGA may similarly save the world from wokism at the expense of American power. That may not be what they intend to do, but it is arguably what they're actually doing.",
-      "quoted_tweet": {
-        "author": "tantum",
-        "username": "@QuasLacrimas",
-        "date": "Aug 20",
-        "text": "I'm not going to say anything moralizing about whether Professor Tao should/shouldn't, will/won't go to Tsinghua.\n\nI'll just say that if an offer like that ever comes, and he accepts it, none of his colleagues at Tsinghua will be attacking Chinese society on race, gender and sexuality grounds. Nor will they be supporting a mass student protest movement that advocates bringing political violence to China. Nor will they be threatening to shut down their research to protest the CCP denying certain foreigners visas for political reasons.\n\nI'm not saying that's good or bad. I'm just saying it will never happen at Tsinghua.\n\nAnyone who is upset that the US government is sanctioning universities for anti-American agendas, and would rather work in China than have his own university follow (pro-American) government guidance, isn't against government control of universities. That would be absurd in the extreme. He would be in favor of very strict government control of universities, students, and faculty, so long as it is a control by a government he feels loyalty to.",
-        "link": "/QuasLacrimas/status/1957960430766133563#m"
-      },
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGyz9Cn3aAAMxSKi.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        },
-        {
-          "type": "image",
-          "src": "/pic/media%2FGyz2dxlaAAM0OmW.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        },
-        {
-          "type": "image",
-          "src": "/pic/media%2FGyz45BZbkAAAwE4.png%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        },
-        {
-          "type": "image",
-          "src": "/pic/media%2FGyz53e2aAAE3tov.png%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        }
-      ],
-      "stats": {},
-      "handle": "balajis",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/balajis/status/1957740572845961324#m",
-      "tweet_id": "1957740572845961324",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Balaji",
-      "username": "@balajis",
-      "date": "Aug 19",
-      "full_date": "Aug 19, 2025 · 9:45 AM UTC",
-      "text": "Don’t be surprised if China offers Terry Tao the chair of the mathematics department at Tsinghua University.\n\nAnd all the funding he wants.\n\nBecause it is possible for the US to fumble the bag as the destination for global talent. And indeed it is fumbling that bag right now.",
-      "quoted_tweet": {
-        "author": "Paul Graham",
-        "username": "@paulg",
-        "date": "Aug 3",
-        "text": "The Trump administration has suspended the funding of Terence Tao and the Institute for Pure and Applied Mathematics at UCLA.",
-        "link": "/paulg/status/1951996478555357530#m"
-      },
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGxbiWwcaoAAisK-.png%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        }
-      ],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "balajis",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/sama/status/1955095125597753567#m",
-      "tweet_id": "1955095125597753567",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Sam Altman",
-      "username": "@sama",
-      "date": "Aug 12",
-      "full_date": "Aug 12, 2025 · 2:32 AM UTC",
-      "text": "I hope someone will get counter-discovery on this, I and many others would love to know what's been happening.\n\nBut OpenAI will just stay focused on making great products.",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "sama",
-      "importance_score": 7,
-      "importance_reason": "Company keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1944435412489171119#m",
-      "tweet_id": "1944435412489171119",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Jul 13",
-      "full_date": "Jul 13, 2025 · 4:35 PM UTC",
-      "text": "Scaling up RL is all the rage right now, I had a chat with a friend about it yesterday. I'm fairly certain RL will continue to yield more intermediate gains, but I also don't expect it to be the full story. RL is basically \"hey this happened to go well (/poorly), let me slightly increase (/decrease) the probability of every action I took for the future\". You get a lot more leverage from verifier functions than explicit supervision, this is great. But first, it looks suspicious asymptotically - once the tasks grow to be minutes/hours of interaction long, you're really going to do all that work just to learn a single scalar outcome at the very end, to directly weight the gradient? Beyond asymptotics and second, this doesn't feel like the human mechanism of improvement for majority of intelligence tasks. There's significantly more bits of supervision we extract per rollout via a review/reflect stage along the lines of \"what went well? what didn't go so well? what should I try next time?\" etc. and the lessons from this stage feel explicit, like a new string to be added to the system prompt for the future, optionally to be distilled into weights (/intuition) later a bit like sleep. In English, we say something becomes \"second nature\" via this process, and we're missing learning paradigms like this. The new Memory feature is maybe a primordial version of this in ChatGPT, though it is only used for customization not problem solving. Notice that there is no equivalent of this for e.g. Atari RL because there are no LLMs and no in-context learning in those domains. \n\nExample algorithm: given a task, do a few rollouts, stuff them all into one context window (along with the reward in each case), use a meta-prompt to review/reflect on what went well or not to obtain string \"lesson\", to be added to system prompt (or more generally modify the current lessons database). Many blanks to fill in, many tweaks possible, not obvious.\n\nExample of lesson: we know LLMs can't super easily see letters due to tokenization and can't super easily count inside the residual stream, hence 'r' in 'strawberry' being famously difficult. Claude system prompt had a \"quick fix\" patch - a string was added along the lines of \"If the user asks you to count letters, first separate them by commas and increment an explicit counter each time and do the task like that\". This string is the \"lesson\", explicitly instructing the model how to complete the counting task, except the question is how this might fall out from agentic practice, instead of it being hard-coded by an engineer, how can this be generalized, and how lessons can be distilled over time to not bloat context windows indefinitely.\n\nTLDR: RL will lead to more gains because when done well, it is a lot more leveraged, bitter-lesson-pilled, and superior to SFT. It doesn't feel like the full story, especially as rollout lengths continue to expand. There are more S curves to find beyond, possibly specific to LLMs and without analogues in game/robotics-like environments, which is exciting.",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "karpathy",
-      "importance_score": 7,
-      "importance_reason": "Company keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1941616674094170287#m",
-      "tweet_id": "1941616674094170287",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Jul 5",
-      "full_date": "Jul 5, 2025 · 9:54 PM UTC",
-      "text": "How to build a thriving open source community by writing code like bacteria do 🦠. Bacterial code (genomes) are:\n\n- small (each line of code costs energy)\n- modular (organized into groups of swappable operons)\n- self-contained (easily \"copy paste-able\" via horizontal gene transfer)\n\nIf chunks of code are small, modular, self-contained and trivial to copy-and-paste, the community can thrive via horizontal gene transfer. For any function (gene) or class (operon) that you write: can you imagine someone going \"yoink\" without knowing the rest of your code or having to import anything new, to gain a benefit? Could your code be a trending GitHub gist?\n\nThis coding style guide has allowed bacteria to colonize every ecological nook from cold to hot to acidic or alkaline in the depths of the Earth and the vacuum of space, along with an insane diversity of carbon anabolism, energy metabolism, etc. It excels at rapid prototyping but... it can't build complex life. By comparison, the eukaryotic genome is a significantly larger, more complex, organized and coupled monorepo. Significantly less inventive but necessary for complex life - for building entire organs and coordinating their activity. With our advantage of intelligent design, it should possible to take advantage of both. Build a eukaryotic monorepo backbone if you have to, but maximize bacterial DNA.",
-      "quoted_tweet": null,
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGvIB64XWYAAg1B8.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
+          "thumbnail": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp"
         }
       ],
       "stats": {
         "retweets": "",
         "likes": ""
       },
-      "handle": "karpathy",
+      "handle": "AndrewYNg",
       "importance_score": 7,
       "importance_reason": "Company keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/balajis/status/1957736491259494842#m",
-      "tweet_id": "1957736491259494842",
+      "tweet_url": "/markgurman/status/1959999529052516763#m",
+      "tweet_id": "1959999529052516763",
       "is_retweet": false,
       "is_pinned": false,
-      "author": "Balaji",
-      "username": "@balajis",
-      "date": "Aug 19",
-      "full_date": "Aug 19, 2025 · 9:28 AM UTC",
-      "text": "It’s extraordinarily difficult to build something like SpaceX even in peacetime.\n\nIf huge swaths of society are irrationally trying to get you, the difficulty rises further by orders of magnitude.\n\nMeanwhile, China just plows ahead relentlessly.",
+      "author": "Mark Gurman",
+      "username": "@markgurman",
+      "date": "Aug 25",
+      "full_date": "Aug 25, 2025 · 3:21 PM UTC",
+      "text": "Elon Musk sues Apple and OpenAIbloomberg.com/news/articles/…",
       "quoted_tweet": {
-        "author": "Eric Berger",
-        "username": "@SciGuySpace",
-        "date": "Aug 18",
-        "text": "I went there. Because at this point, it's difficult to come to any other conclusion.arstechnica.com/space/2025/0…",
-        "link": "/SciGuySpace/status/1957495041544364338#m"
+        "author": "Mark Gurman",
+        "username": "@markgurman",
+        "date": "Aug 12",
+        "text": "Apple on@elonmusk’s claims: \"The App Store is designed to be fair and free of bias. We feature thousands of apps through charts, algorithmic recommendations, and curated lists selected by experts using objective criteria.”bloomberg.com/news/articles/…",
+        "link": "/markgurman/status/1955383759853007198#m"
       },
       "media": [],
       "stats": {},
-      "handle": "balajis",
+      "handle": "markgurman",
       "importance_score": 7,
       "importance_reason": "Company keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/karpathy/status/1957574489358873054#m",
-      "tweet_id": "1957574489358873054",
+      "tweet_url": "/markgurman/status/1959717192758706516#m",
+      "tweet_id": "1959717192758706516",
       "is_retweet": false,
       "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Aug 18",
-      "full_date": "Aug 18, 2025 · 10:45 PM UTC",
-      "text": "I get ~10 spam calls per day (various automated voicemails, \"loan pre-approval\" etc) and ~5 spam messages per day (usually phishing).\n\n- I have AT&T Active Armor, all of the above still slips through.\n- All of the above is always from new, unique numbers so blocking doesn't work.\n- I am on all Do Not Call lists.\n- I have iOS \"Silence Unknown Callers\" on, but even if it catches & silences them I still get the notifications.\n\nNot sure if other people are seeing something similar or figured out anything that works",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "replies": "",
-        "likes": ""
-      },
-      "handle": "karpathy",
-      "importance_score": 6,
-      "importance_reason": "Tech keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1957561075744010253#m",
-      "tweet_id": "1957561075744010253",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Aug 18",
-      "full_date": "Aug 18, 2025 · 9:51 PM UTC",
-      "text": "Ok, spent an ~hour sifting through submissions. The biggest challenge was the spam, as majority of replies are people linking to their own existing projects, not things made for the challenge. Of the ones that were:\n\nWinner: I most enjoyed this one from@uncertainsys- OmegaQuest. He's solving Humanity's Last Exam problems with heavy AI use in the loop on video. Actually I really identified with the long pauses and general confusion in trying to use the current state of the art systems in learning something hard and new, where they are simultaneously so tantalizingly helpful at the margins, but still really poor overall, compared to an imagined human expert tutor. The \"explanations\" are... not. But I love the tenacity on display in working out something hard and seeing how far you can get with AI. A good reminder how it's better than what was, but also so far from what could be.nitter.net/uncertainsys/status/19…Shoutout to@measure_planfor cool \"visual vibe coding\" projects, e.g. new musical instrumentsnitter.net/measure_plan/status/19…A few of people commented that the challenge shouldn't have to be only for projects uniquely made for the challenge. If that were the case then shoutout to@evanliinet al. who linked to tinytpu, i really like the animated diagram, i haven't seen that before.nitter.net/evanliin/status/195749…Shoutout to@ChrisChipMonkfor partially incepting the experiment a while ago withnitter.net/ChrisChipMonk/status/1…but I basically come out agreeing with@nearcyanin his earlier commentnitter.net/nearcyan/status/193839…, maybe even $5K isn't :)",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {},
-      "handle": "karpathy",
-      "importance_score": 6,
-      "importance_reason": "Tech keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1956765908078387382#m",
-      "tweet_id": "1956765908078387382",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Aug 16",
-      "full_date": "Aug 16, 2025 · 5:12 PM UTC",
-      "text": "I am (slowly) re-reading the Tolkien legendarium (of which Lord of the Rings is a small part). The whole body of work is so incredible and there's nothing else like it... it dilutes other worlds of fiction. Wait - your story doesn't have a comprehensive history/mythology spanning multiple ages all the way back to a creation myth as detailed in separate volumes? You didn't first invent new languages and dialects for your characters? You didn't pack it with powerful themes and stories written it in a beautiful, archaic style and compose poems and songs alongside? It didn't take you multiple decades of iteration? And what of all the uncharted territory still remaining? Is Tom Bombadil one of the Ainur. Where are the Entwives. What happened to the two unaccounted Istari. Can we hear more about what it was like in Cuiviénen when the elves first awoke? Or to see the light of the two trees of Valinor. Or of the splendor of the caves of Aglarond.\n\nWhat's most on my mind though - the Tolkien legendarium is imo a concrete example of a height of culture. Does AI, today or soon, make it easier to reach this high via empowerment in both writing and ideation? Or harder, when quick wins are tempting and ~free, and an independent ability to create is stifled. If such a body of work is made again but now with heavy AI assistance, does it inspire the same wonder? What if thousands of them come out on demand with just a prompt? Why do you feel cheated when you learn that something your read was AI generated? Is it transient or a function of capability? Is it slop? What is slop? Or is wonder inseparable from its own creation myth of a lifelong obsession of a mind like your own? So many questions.",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "replies": "",
-        "retweets": "",
-        "likes": ""
-      },
-      "handle": "karpathy",
-      "importance_score": 6,
-      "importance_reason": "Tech keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1954224651443544436#m",
-      "tweet_id": "1954224651443544436",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Aug 9",
-      "full_date": "Aug 9, 2025 · 4:53 PM UTC",
-      "text": "I'm noticing that due to (I think?) a lot of benchmarkmaxxing on long horizon tasks, LLMs are becoming a little too agentic by default, a little beyond my average use case.\n\nFor example in coding, the models now tend to reason for a fairly long time, they have an inclination to start listing and grepping files all across the entire repo, they do repeated web searchers, they over-analyze and over-think little rare edge cases even in code that is knowingly incomplete and under active development, and often come back ~minutes later even for simple queries.\n\nThis might make sense for long-running tasks but it's less of a good fit for more \"in the loop\" iterated development that I still do a lot of, or if I'm just looking for a quick spot check before running a script, just in case I got some indexing wrong or made some dumb error. So I find myself quite often stopping the LLMs with variations of \"Stop, you're way overthinking this. Look at only this single file. Do not use any tools. Do not over-engineer\", etc.\n\nBasically as the default starts to slowly creep into the \"ultrathink\" super agentic mode, I feel a need for the reverse, and more generally good ways to indicate or communicate intent / stakes, from \"just have a quick look\" all the way to \"go off for 30 minutes, come back when absolutely certain\".",
+      "author": "Mark Gurman",
+      "username": "@markgurman",
+      "date": "Aug 24",
+      "full_date": "Aug 24, 2025 · 8:39 PM UTC",
+      "text": "Apple’s first foldable phone will be book-style, use Touch ID not Face ID, use a C2 modem, have four total cameras and only use eSIM. The screen’s crease is less visible than current foldables. Recently, Apple changed display from on-cell to in-cell touch.bloomberg.com/news/newslette…",
       "quoted_tweet": null,
       "media": [],
       "stats": {
         "likes": ""
       },
-      "handle": "karpathy",
-      "importance_score": 6,
-      "importance_reason": "Tech keyword (AI not available - using keywords)",
+      "handle": "markgurman",
+      "importance_score": 7,
+      "importance_reason": "Company keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/karpathy/status/1946745524033593739#m",
-      "tweet_id": "1946745524033593739",
+      "tweet_url": "/karpathy/status/1959703967694545296#m",
+      "tweet_id": "1959703967694545296",
       "is_retweet": false,
       "is_pinned": false,
       "author": "Andrej Karpathy",
       "username": "@karpathy",
-      "date": "Jul 20",
-      "full_date": "Jul 20, 2025 · 1:34 AM UTC",
-      "text": "Hi@gmaildoes the \"report phishing\" button do anything",
+      "date": "Aug 24",
+      "full_date": "Aug 24, 2025 · 7:46 PM UTC",
+      "text": "Continuing the journey of optimal LLM-assisted coding experience. In particular, I find that instead of narrowing in on a perfect one thing my usage is increasingly diversifying across a few workflows that I \"stitch up\" the pros/cons of:\n\nPersonally the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete. This is because I find that writing concrete chunks of code/comments myself and in the right part of the code is a high bandwidth way of communicating \"task specification\" to the LLM, i.e. it's primarily about task specification bits - it takes too many bits and too much latency to communicate what I want in text, and it's faster to just demonstrate it in the code and in the right place. Sometimes the tab complete model is annoying so I toggle it on/off a lot.\n\nNext layer up is highlighting a concrete chunk of code and asking for some kind of a modification.\n\nNext layer up is Claude Code / Codex / etc, running on the side of Cursor, which I go to for larger chunks of functionality that are also fairly easy to specify in a prompt. These are super helpful, but still mixed overall and slightly frustrating at times. I don't run in YOLO mode because they can go off-track and do dumb things you didn't want/need and I ESC fairly often. I also haven't learned to be productive using more than one instance in parallel - one already feels hard enough. I haven't figured out a good way to keep CLAUDE[.]md good or up to date. I often have to do a pass of \"cleanups\" for coding style, or matters of code taste. E.g. they are too defensive and often over-use try/catch statements, they often over-complicate abstractions, they overbloat code (e.g. a nested if-the-else constructs when a list comprehension or a one-liner if-then-else would work), or they duplicate code chunks instead of creating a nice helper function, things like that... they basically don't have a sense of taste. They are indispensable in cases where I inch into a more vibe-coding territory where I'm less familiar (e.g. writing some rust recently, or sql commands, or anything else I've done less of before). I also tried CC to teach me things alongside the code it was writing but that didn't work at all - it really wants to just write code a lot more than it wants to explain anything along the way. I tried to get CC to do hyperparameter tuning, which was highly amusing. They are also super helpful in all kinds of lower-stakes one-off custom visualization or utilities or debugging code that I would never write otherwise because it would have taken way too long. E.g. CC can hammer out 1,000 lines of one-off extensive visualization/code just to identify a specific bug, which gets all deleted right after we find it. It's the code post-scarcity era - you can just create and then delete thousands of lines of super custom, super ephemeral code now, it's ok, it's not this precious costly thing anymore.\n\nFinal layer of defense is GPT5 Pro, which I go to for the hardest things. E.g. it has happened to me a few times now that I / Cursor / CC are all stuck on a bug for 10 minutes, but when I copy paste the whole thing to 5 Pro, it goes off for 10 minutes but then actually finds a really subtle bug. It is very strong. It can dig up all kinds of esoteric docs and papers and such. I've also used it for other meatier tasks, e.g. suggestions on how to clean up abstractions (mixed results, sometimes good ideas but not all), or an entire literature review around how people do this or that and it comes back with good relevant resources / pointers.\n\nAnyway, coding feels completely blown open with possibility across a number of \"kinds\" of coding and then a number of tools with their pros/cons. It's hard to avoid the feeling of anxiety around not being at the frontier of what is collectively possible, hence random sunday shower of thoughts and a good amount of curiosity about what others are finding.",
       "quoted_tweet": null,
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGwQ6gB4X0AEFbUy.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        }
-      ],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "karpathy",
-      "importance_score": 6,
-      "importance_reason": "Tech keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1946325810618700033#m",
-      "tweet_id": "1946325810618700033",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Jul 18",
-      "full_date": "Jul 18, 2025 · 9:46 PM UTC",
-      "text": "\"Using a better model for analysis\" 🤨\nI didn't realize I was using haiku all this time, no idea when claude code snuck this one in rofl.",
-      "quoted_tweet": null,
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/media%2FGwK7Mq_XYAA1W0x.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        }
-      ],
+      "media": [],
       "stats": {
         "likes": ""
       },
@@ -1408,9 +836,9 @@
     }
   ],
   "stats": {
-    "total_handles": 6,
-    "successful_handles": 6,
-    "total_important_tweets": 25,
-    "total_filtered_tweets": 78
+    "total_handles": 12,
+    "successful_handles": 12,
+    "total_important_tweets": 13,
+    "total_filtered_tweets": 46
   }
 }
