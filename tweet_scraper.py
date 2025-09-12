@@ -204,7 +204,14 @@ class TwitterScraper:
                             tweet_data['full_date'] = date_link['title']
                 tweet_content = item.find('div', class_='tweet-content')
                 if tweet_content:
-                    tweet_data['text'] = tweet_content.get_text(strip=True)
+                    urls = []
+                    for link in tweet_content.find_all('a', href=True):
+                        href = link['href']
+                        if href.startswith('http://') or href.startswith('https://'):
+                            urls.append(href)
+                    tweet_data['urls'] = urls
+                    tweet_data['text'] = tweet_content.get_text(separator=' ', strip=True)
+                    
                 tweet_data['quoted_tweet'] = self.extract_quoted_tweet(item)
                 tweet_data['media'] = self.extract_media_info(item)
                 tweet_data['stats'] = self.extract_tweet_stats(item)

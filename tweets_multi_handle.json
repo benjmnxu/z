@@ -1,5 +1,5 @@
 {
-  "scrape_timestamp": "2025-09-01 23:07:38",
+  "scrape_timestamp": "2025-09-12 11:28:03",
   "handles_scraped": [
     "elonmusk",
     "sama",
@@ -12,18 +12,18 @@
     "TechCrunch",
     "FT",
     "JustinWolfers",
-    "AP_Politics"
+    "Reuters"
   ],
   "individual_results": [
     {
       "handle": "elonmusk",
       "url": "http://127.0.0.1:8080/elonmusk",
-      "scrape_timestamp": "2025-09-01 23:07:27",
-      "tweets_count": 3,
+      "scrape_timestamp": "2025-09-12 11:27:50",
+      "tweets_count": 0,
       "new_tweets_count": 0,
-      "skipped_tweets_count": 17,
+      "skipped_tweets_count": 21,
       "tweets": [],
-      "filtered_out_count": 3,
+      "filtered_out_count": 0,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -34,12 +34,12 @@
     {
       "handle": "sama",
       "url": "http://127.0.0.1:8080/sama",
-      "scrape_timestamp": "2025-09-01 23:07:28",
-      "tweets_count": 3,
+      "scrape_timestamp": "2025-09-12 11:27:51",
+      "tweets_count": 1,
       "new_tweets_count": 0,
-      "skipped_tweets_count": 17,
+      "skipped_tweets_count": 19,
       "tweets": [],
-      "filtered_out_count": 3,
+      "filtered_out_count": 1,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -50,115 +50,55 @@
     {
       "handle": "karpathy",
       "url": "http://127.0.0.1:8080/karpathy",
-      "scrape_timestamp": "2025-09-01 23:07:29",
-      "tweets_count": 6,
-      "new_tweets_count": 4,
-      "skipped_tweets_count": 15,
+      "scrape_timestamp": "2025-09-12 11:27:52",
+      "tweets_count": 2,
+      "new_tweets_count": 2,
+      "skipped_tweets_count": 19,
       "tweets": [
         {
-          "tweet_url": "/karpathy/status/1959703967694545296#m",
-          "tweet_id": "1959703967694545296",
+          "tweet_url": "/karpathy/status/1965439123252281654#m",
+          "tweet_id": "1965439123252281654",
           "is_retweet": false,
           "is_pinned": false,
           "author": "Andrej Karpathy",
           "username": "@karpathy",
-          "date": "Aug 24",
-          "full_date": "Aug 24, 2025 · 7:46 PM UTC",
-          "text": "Continuing the journey of optimal LLM-assisted coding experience. In particular, I find that instead of narrowing in on a perfect one thing my usage is increasingly diversifying across a few workflows that I \"stitch up\" the pros/cons of:\n\nPersonally the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete. This is because I find that writing concrete chunks of code/comments myself and in the right part of the code is a high bandwidth way of communicating \"task specification\" to the LLM, i.e. it's primarily about task specification bits - it takes too many bits and too much latency to communicate what I want in text, and it's faster to just demonstrate it in the code and in the right place. Sometimes the tab complete model is annoying so I toggle it on/off a lot.\n\nNext layer up is highlighting a concrete chunk of code and asking for some kind of a modification.\n\nNext layer up is Claude Code / Codex / etc, running on the side of Cursor, which I go to for larger chunks of functionality that are also fairly easy to specify in a prompt. These are super helpful, but still mixed overall and slightly frustrating at times. I don't run in YOLO mode because they can go off-track and do dumb things you didn't want/need and I ESC fairly often. I also haven't learned to be productive using more than one instance in parallel - one already feels hard enough. I haven't figured out a good way to keep CLAUDE[.]md good or up to date. I often have to do a pass of \"cleanups\" for coding style, or matters of code taste. E.g. they are too defensive and often over-use try/catch statements, they often over-complicate abstractions, they overbloat code (e.g. a nested if-the-else constructs when a list comprehension or a one-liner if-then-else would work), or they duplicate code chunks instead of creating a nice helper function, things like that... they basically don't have a sense of taste. They are indispensable in cases where I inch into a more vibe-coding territory where I'm less familiar (e.g. writing some rust recently, or sql commands, or anything else I've done less of before). I also tried CC to teach me things alongside the code it was writing but that didn't work at all - it really wants to just write code a lot more than it wants to explain anything along the way. I tried to get CC to do hyperparameter tuning, which was highly amusing. They are also super helpful in all kinds of lower-stakes one-off custom visualization or utilities or debugging code that I would never write otherwise because it would have taken way too long. E.g. CC can hammer out 1,000 lines of one-off extensive visualization/code just to identify a specific bug, which gets all deleted right after we find it. It's the code post-scarcity era - you can just create and then delete thousands of lines of super custom, super ephemeral code now, it's ok, it's not this precious costly thing anymore.\n\nFinal layer of defense is GPT5 Pro, which I go to for the hardest things. E.g. it has happened to me a few times now that I / Cursor / CC are all stuck on a bug for 10 minutes, but when I copy paste the whole thing to 5 Pro, it goes off for 10 minutes but then actually finds a really subtle bug. It is very strong. It can dig up all kinds of esoteric docs and papers and such. I've also used it for other meatier tasks, e.g. suggestions on how to clean up abstractions (mixed results, sometimes good ideas but not all), or an entire literature review around how people do this or that and it comes back with good relevant resources / pointers.\n\nAnyway, coding feels completely blown open with possibility across a number of \"kinds\" of coding and then a number of tools with their pros/cons. It's hard to avoid the feeling of anxiety around not being at the frontier of what is collectively possible, hence random sunday shower of thoughts and a good amount of curiosity about what others are finding.",
+          "date": "Sep 9",
+          "full_date": "Sep 9, 2025 · 3:36 PM UTC",
+          "urls": [],
+          "text": "Bit silly but I still watch the Apple event livestream for new iPhones, every year since the first one in 2007. It doesn't make sense but it's ok. Livestream today at 10am (in 1.5 hours). This year, crossing my fingers again for an iPhone mini that I know won't come. rip.",
           "quoted_tweet": null,
           "media": [],
           "stats": {
             "likes": ""
           },
           "handle": "karpathy",
-          "importance_score": 6,
-          "importance_reason": "Tech keyword (AI not available - using keywords)",
+          "importance_score": 7,
+          "importance_reason": "Company keyword (AI not available - using keywords)",
           "ai_provider": "gpt"
         },
         {
-          "tweet_url": "/karpathy/status/1952076108565991588#m",
-          "tweet_id": "1952076108565991588",
+          "tweet_url": "/karpathy/status/1944435412489171119#m",
+          "tweet_id": "1944435412489171119",
           "is_retweet": false,
           "is_pinned": false,
           "author": "Andrej Karpathy",
           "username": "@karpathy",
-          "date": "Aug 3",
-          "full_date": "Aug 3, 2025 · 6:36 PM UTC",
-          "text": "Shower of thoughts: Instead of keeping your Twitter/𝕏 payout, direct it towards a \"PayoutChallenge\" of your choosing - anything you want more of in the world!\n\nHere is mine for this round, combining my last 3 payouts of $5478.51:\n\nIt is imperative that humanity not fall while AI ascends. Humanity has to continue to rise, become better alongside. Create something that is specifically designed to uplift team human. Definition intentionally left a bit vague to keep some entropy around people's interpretation, but imo examples include:\n- Any piece of software that aids explanation, visualization, memorization, inspiration, understanding, coordination, etc...\n- It doesn't have to be too lofty, e.g. it can be a specific educational article/video explaining something some other people could benefit from or that you have unique knowledge of.\n- Prompts/agents for explanation, e.g. along the lines of recently released ChatGPT study mode.\n- Related works of art\n\nThis challenge will run for 2 weeks until Aug 17th EOD PST. Submit your contribution as a reply. It has to be something that was uniquely created for this challenge and would not exist otherwise. Criteria includes execution, leverage, novelty, inspiration, aesthetics, amusement. People can upvote submissions by liking, this \"people's choice\" will also be a factor. I will decide the winner on Aug 17th and send $5478.51 :)",
+          "date": "Jul 13",
+          "full_date": "Jul 13, 2025 · 4:35 PM UTC",
+          "urls": [],
+          "text": "Scaling up RL is all the rage right now, I had a chat with a friend about it yesterday. I'm fairly certain RL will continue to yield more intermediate gains, but I also don't expect it to be the full story. RL is basically \"hey this happened to go well (/poorly), let me slightly increase (/decrease) the probability of every action I took for the future\". You get a lot more leverage from verifier functions than explicit supervision, this is great. But first, it looks suspicious asymptotically - once the tasks grow to be minutes/hours of interaction long, you're really going to do all that work just to learn a single scalar outcome at the very end, to directly weight the gradient? Beyond asymptotics and second, this doesn't feel like the human mechanism of improvement for majority of intelligence tasks. There's significantly more bits of supervision we extract per rollout via a review/reflect stage along the lines of \"what went well? what didn't go so well? what should I try next time?\" etc. and the lessons from this stage feel explicit, like a new string to be added to the system prompt for the future, optionally to be distilled into weights (/intuition) later a bit like sleep. In English, we say something becomes \"second nature\" via this process, and we're missing learning paradigms like this. The new Memory feature is maybe a primordial version of this in ChatGPT, though it is only used for customization not problem solving. Notice that there is no equivalent of this for e.g. Atari RL because there are no LLMs and no in-context learning in those domains. \n\nExample algorithm: given a task, do a few rollouts, stuff them all into one context window (along with the reward in each case), use a meta-prompt to review/reflect on what went well or not to obtain string \"lesson\", to be added to system prompt (or more generally modify the current lessons database). Many blanks to fill in, many tweaks possible, not obvious.\n\nExample of lesson: we know LLMs can't super easily see letters due to tokenization and can't super easily count inside the residual stream, hence 'r' in 'strawberry' being famously difficult. Claude system prompt had a \"quick fix\" patch - a string was added along the lines of \"If the user asks you to count letters, first separate them by commas and increment an explicit counter each time and do the task like that\". This string is the \"lesson\", explicitly instructing the model how to complete the counting task, except the question is how this might fall out from agentic practice, instead of it being hard-coded by an engineer, how can this be generalized, and how lessons can be distilled over time to not bloat context windows indefinitely.\n\nTLDR: RL will lead to more gains because when done well, it is a lot more leveraged, bitter-lesson-pilled, and superior to SFT. It doesn't feel like the full story, especially as rollout lengths continue to expand. There are more S curves to find beyond, possibly specific to LLMs and without analogues in game/robotics-like environments, which is exciting.",
           "quoted_tweet": null,
           "media": [],
           "stats": {
             "likes": ""
           },
           "handle": "karpathy",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1945979830740435186#m",
-          "tweet_id": "1945979830740435186",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Jul 17",
-          "full_date": "Jul 17, 2025 · 10:52 PM UTC",
-          "text": "Diffusion video models but now - **realtime**!\n\nSimple video filters are real-time but can only do basic re-coloring and styles. Video diffusion models (Veo and friends) are magic, but they take many seconds/minutes to generate. MirageLSD is real-time magic. Unlike simple video filters, diffusion models actually *understand* what they are looking at, so they can style all parts of the feed intelligently (e.g. putting hats on heads, or light sabers into hands, etc.). And they are arbitrarily steerable, e.g. by text prompts.\n\nCustomizable, intelligent video filters unlock many cool ideas over time:\n- transform camera feeds into alternate realities\n- direct and shoot your own movies, acting out scenes with props. Realtime => instant feedback/review.\n- vibe code games around just simple spheres/blocks, then use a real-time diffusion model to texture your game to make it beautiful.\n- style and customize any video feed: games, videos, ... e.g. Skyrim but \"MORE EPIC\"? DOOM II but modern Unreal Engine quality with just a prompt? Horror movie but \"cute, pink and bunnies only\"? I don't know!\n- zoom call backgrounds+++\n- real-time try on clothes virtually\n- glasses: e.g. cartoonify your vision in real time?\n- we can now build Harry Potter Mirror of Erised, showing the \"raw feed\" of you in the mirror but augmented with your deepest desires (as inferred by the AI).\n- I don't know, I'm probably missing the biggest one, so many things!\n\n(Disclosure I am (very small) angel investor in Decart, I was excited because imo this technology will get very good very fast and it feels general, powerful but it's also technically very difficult. Congrats on the launch to the team!)",
-          "quoted_tweet": {
-            "author": "Decart",
-            "username": "@DecartAI",
-            "date": "Jul 17",
-            "text": "Introducing MirageLSD: The First Live-Stream Diffusion (LSD) AI Model\n\nInput any video stream, from a camera or video chat to a computer screen or game, and transform it into any world you desire, in real-time (<40ms latency).\n\nHere’s how it works (w/ demo you can use!):",
-            "link": "/DecartAI/status/1945947692871692667#m"
-          },
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/amplify_video_thumb%2F1945947630892470273%2Fimg%2FtMWGyDcoT3KmQg0U.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            },
-            {
-              "type": "video",
-              "thumbnail": "/pic/amplify_video_thumb%2F1945947630892470273%2Fimg%2FtMWGyDcoT3KmQg0U.jpg%3Fname%3Dsmall%26format%3Dwebp"
-            }
-          ],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/karpathy/status/1943411187296686448#m",
-          "tweet_id": "1943411187296686448",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Andrej Karpathy",
-          "username": "@karpathy",
-          "date": "Jul 10",
-          "full_date": "Jul 10, 2025 · 8:45 PM UTC",
-          "text": "I often rant about how 99% of attention is about to be LLM attention instead of human attention. What does a research paper look like for an LLM instead of a human? It’s definitely not a pdf. There is huge space for an extremely valuable “research app” that figures this out.",
-          "quoted_tweet": {
-            "author": "Michael Levin",
-            "username": "@drmichaellevin",
-            "date": "Jul 10",
-            "text": "I'm constantly irritated that I don't have time to read the torrent of cool papers coming faster and faster from amazing people in relevant fields.  Other scientists have the same issue and have no time to read most of my lengthy conceptual papers either.  So whom are we writing these papers for?\n\nI guess, at least until they fall in to the same issue from their own work, AI's will be the only ones who actually have the bandwidth to read all this stuff.  I'm not specifically talking about today's language models - let's assume we mean whatever inevitable AI shows up, that is able to read the literature and have impact on the research (whether by talking to humans or by running lab automation/robot scientist platforms).\n\nSo then: how should we be writing, knowing that a lot of our audience will be AI (plus cyborgs, hybrots, augmented humans, etc.)?  Maybe it's too early to know what to do, but we better start thinking about it because assuming our audience will always be today's humans seems untenable. Taking seriously the idea that someday the impactful audience will be very different, and that the things we write now are in some sense a training set for truly diverse future beings, how does our writing change? or does it?\n\nwhat say you@danfaggella@mpshanahan@Plinz@blaiseaguera?",
-            "link": "/drmichaellevin/status/1943321140128030753#m"
-          },
-          "media": [],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "karpathy",
-          "importance_score": 6,
-          "importance_reason": "Tech keyword (AI not available - using keywords)",
+          "importance_score": 7,
+          "importance_reason": "Company keyword (AI not available - using keywords)",
           "ai_provider": "gpt"
         }
       ],
-      "filtered_out_count": 2,
+      "filtered_out_count": 0,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -169,12 +109,12 @@
     {
       "handle": "naval",
       "url": "http://127.0.0.1:8080/naval",
-      "scrape_timestamp": "2025-09-01 23:07:29",
-      "tweets_count": 7,
+      "scrape_timestamp": "2025-09-12 11:27:53",
+      "tweets_count": 0,
       "new_tweets_count": 0,
-      "skipped_tweets_count": 13,
+      "skipped_tweets_count": 19,
       "tweets": [],
-      "filtered_out_count": 7,
+      "filtered_out_count": 0,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -185,44 +125,12 @@
     {
       "handle": "pmarca",
       "url": "http://127.0.0.1:8080/pmarca",
-      "scrape_timestamp": "2025-09-01 23:07:31",
-      "tweets_count": 8,
-      "new_tweets_count": 1,
-      "skipped_tweets_count": 13,
-      "tweets": [
-        {
-          "tweet_url": "/pmarca/status/1902724994607570975#m",
-          "tweet_id": "1902724994607570975",
-          "is_retweet": false,
-          "is_pinned": true,
-          "author": "Marc Andreessen 🇺🇸",
-          "username": "@pmarca",
-          "date": "Mar 20",
-          "full_date": "Mar 20, 2025 · 2:12 PM UTC",
-          "text": "THAT'S RIGHT.",
-          "quoted_tweet": null,
-          "media": [
-            {
-              "type": "image",
-              "src": "/pic/ext_tw_video_thumb%2F1902724959589253120%2Fpu%2Fimg%2FEf8KguO1P_C8NyaT.jpg%3Fname%3Dsmall%26format%3Dwebp",
-              "alt": ""
-            },
-            {
-              "type": "video",
-              "thumbnail": "/pic/ext_tw_video_thumb%2F1902724959589253120%2Fpu%2Fimg%2FEf8KguO1P_C8NyaT.jpg%3Fname%3Dsmall%26format%3Dwebp"
-            }
-          ],
-          "stats": {
-            "retweets": "",
-            "likes": ""
-          },
-          "handle": "pmarca",
-          "importance_score": 9,
-          "importance_reason": "Pinned tweet (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        }
-      ],
-      "filtered_out_count": 7,
+      "scrape_timestamp": "2025-09-12 11:27:54",
+      "tweets_count": 0,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 21,
+      "tweets": [],
+      "filtered_out_count": 0,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -233,35 +141,37 @@
     {
       "handle": "AndrewYNg",
       "url": "http://127.0.0.1:8080/AndrewYNg",
-      "scrape_timestamp": "2025-09-01 23:07:31",
-      "tweets_count": 3,
+      "scrape_timestamp": "2025-09-12 11:27:56",
+      "tweets_count": 2,
       "new_tweets_count": 1,
-      "skipped_tweets_count": 17,
+      "skipped_tweets_count": 18,
       "tweets": [
         {
-          "tweet_url": "/AndrewYNg/status/1953097967361245251#m",
-          "tweet_id": "1953097967361245251",
+          "tweet_url": "/AndrewYNg/status/1960731961494004077#m",
+          "tweet_id": "1960731961494004077",
           "is_retweet": false,
           "is_pinned": false,
           "author": "Andrew Ng",
           "username": "@AndrewYNg",
-          "date": "Aug 6",
-          "full_date": "Aug 6, 2025 · 2:16 PM UTC",
-          "text": "I'm thrilled to announce the definitive course on Claude Code, created with@AnthropicAIand taught by Elie Schoppik@eschoppik. If you want to use highly agentic coding - where AI works autonomously for many minutes or longer, not just completing code snippets - this is it.\n\nClaude Code has been a game-changer for many developers (including me!), but there's real depth to using it well. This comprehensive course covers everything from fundamentals to advanced patterns.\n\nAfter this short course, you'll be able to:\n- Orchestrate multiple Claude subagents to work on different parts of your codebase simultaneously\n- Tag Claude in GitHub issues and have it autonomously create, review, and merge pull requests\n- Transform messy Jupyter notebooks into clean, production-ready dashboards\n- Use MCP tools like Playwright so Claude can see what's wrong with your UI and fix it autonomously\n\nWhether you're new to Claude Code or already using it, you'll discover powerful capabilities that can fundamentally change how you build software.\n\nI'm very excited about what agentic coding lets everyone now do. Please take this course!deeplearning.ai/short-course…",
+          "date": "Aug 27",
+          "full_date": "Aug 27, 2025 · 3:51 PM UTC",
+          "urls": [
+            "https://www.deeplearning.ai/short-courses/agentic-knowledge-graph-construction"
+          ],
+          "text": "Build better RAG by letting a team of agents extract and connect your reference materials into a knowledge graph. Our new short course, “Agentic Knowledge Graph Construction,” taught by @Neo4j Innovation Lead @akollegger , shows you how.\n\nKnowledge graphs are an important way to store information accurately but they are a lot of work to build manually.\n\nIn this course you’ll learn how to build a team of agents that turn data– in this case product reviews and invoices from suppliers–into structured graphs of entities and relationships for RAG.\n\nLearn how agents can automatically handle the time-consuming work of building graphs — extracting entities and relationships (e.g., Product \"contains\" Assembly, Part \"supplied_by\" Supplier, Customer review \"mentions\" Product), deduplicating them, fact-checking them, and committing them to a graph database — so your retrieval system can find right information to generate accurate output. For example, you can use agents to help trace customer complaints directly to specific suppliers, manufacturing processes, and product hierarchies, thus turning fragmented information into queryable business intelligence.\n\nSkills you’ll gain:\n- Build, store, and access knowledge graphs using the Neo4j graph database\n- Build multi-agent systems using Google’s Agent Development Kit (ADK)\n- Set up a loop of agentic workflows to propose and refine a graph schema through fact-checking\n- Connect agent-generated graphs of unstructured and structured data into a unified knowledge graph\n\nThis course gets into the practicum of why knowledge graphs give more accurate information retrieval than vector search alone, especially for high-stakes applications where precision matters more than fuzzy similarity matching.\n\nSign up here: deeplearning.ai/short-course…",
           "quoted_tweet": null,
           "media": [
             {
               "type": "image",
-              "src": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp",
+              "src": "/pic/amplify_video_thumb%2F1960731242825179143%2Fimg%2Fp8H-0qyI9wF9zCLx.jpg%3Fname%3Dsmall%26format%3Dwebp",
               "alt": ""
             },
             {
               "type": "video",
-              "thumbnail": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp"
+              "thumbnail": "/pic/amplify_video_thumb%2F1960731242825179143%2Fimg%2Fp8H-0qyI9wF9zCLx.jpg%3Fname%3Dsmall%26format%3Dwebp"
             }
           ],
           "stats": {
-            "retweets": "",
             "likes": ""
           },
           "handle": "AndrewYNg",
@@ -270,7 +180,7 @@
           "ai_provider": "gpt"
         }
       ],
-      "filtered_out_count": 2,
+      "filtered_out_count": 1,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -281,12 +191,12 @@
     {
       "handle": "Emerj",
       "url": "http://127.0.0.1:8080/Emerj",
-      "scrape_timestamp": "2025-09-01 23:07:32",
-      "tweets_count": 6,
+      "scrape_timestamp": "2025-09-12 11:27:56",
+      "tweets_count": 0,
       "new_tweets_count": 0,
-      "skipped_tweets_count": 14,
+      "skipped_tweets_count": 20,
       "tweets": [],
-      "filtered_out_count": 6,
+      "filtered_out_count": 0,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -297,103 +207,34 @@
     {
       "handle": "markgurman",
       "url": "http://127.0.0.1:8080/markgurman",
-      "scrape_timestamp": "2025-09-01 23:07:33",
-      "tweets_count": 5,
-      "new_tweets_count": 4,
-      "skipped_tweets_count": 14,
+      "scrape_timestamp": "2025-09-12 11:27:58",
+      "tweets_count": 1,
+      "new_tweets_count": 1,
+      "skipped_tweets_count": 17,
       "tweets": [
         {
-          "tweet_url": "/markgurman/status/1959618085012570179#m",
-          "tweet_id": "1959618085012570179",
-          "is_retweet": false,
-          "is_pinned": true,
-          "author": "Mark Gurman",
-          "username": "@markgurman",
-          "date": "Aug 24",
-          "full_date": "Aug 24, 2025 · 2:05 PM UTC",
-          "text": "Power On: Apple is set to kick off three-year plan to reinvent the iPhone, including three major new models in a row: the iPhone Air, foldable iPhone and 20th anniversary iPhone.bloomberg.com/news/newslette…",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "markgurman",
-          "importance_score": 9,
-          "importance_reason": "Pinned tweet (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/markgurman/status/1959999529052516763#m",
-          "tweet_id": "1959999529052516763",
+          "tweet_url": "/markgurman/status/1965510494531584375#m",
+          "tweet_id": "1965510494531584375",
           "is_retweet": false,
           "is_pinned": false,
           "author": "Mark Gurman",
           "username": "@markgurman",
-          "date": "Aug 25",
-          "full_date": "Aug 25, 2025 · 3:21 PM UTC",
-          "text": "Elon Musk sues Apple and OpenAIbloomberg.com/news/articles/…",
-          "quoted_tweet": {
-            "author": "Mark Gurman",
-            "username": "@markgurman",
-            "date": "Aug 12",
-            "text": "Apple on@elonmusk’s claims: \"The App Store is designed to be fair and free of bias. We feature thousands of apps through charts, algorithmic recommendations, and curated lists selected by experts using objective criteria.”bloomberg.com/news/articles/…",
-            "link": "/markgurman/status/1955383759853007198#m"
-          },
+          "date": "Sep 9",
+          "full_date": "Sep 9, 2025 · 8:19 PM UTC",
+          "urls": [
+            "https://www.bloomberg.com/news/articles/2025-09-09/apple-debuts-airpods-pro-3-with-heart-rate-monitor-better-fit?srnd=undefined&embedded-checkout=true"
+          ],
+          "text": "Apple Inc. introduced its first new AirPods Pro model in three years, adding new health-tracking features, live translation capabilities, improved noise cancellation and a better fit. bloomberg.com/news/articles/…",
+          "quoted_tweet": null,
           "media": [],
           "stats": {},
           "handle": "markgurman",
           "importance_score": 7,
           "importance_reason": "Company keyword (AI not available - using keywords)",
           "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/markgurman/status/1959718122367463501#m",
-          "tweet_id": "1959718122367463501",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Mark Gurman",
-          "username": "@markgurman",
-          "date": "Aug 24",
-          "full_date": "Aug 24, 2025 · 8:43 PM UTC",
-          "text": "It’s going to be the most exciting Apple launch for tech fans in many, many years if you ask me.",
-          "quoted_tweet": {
-            "author": "Max Jambor",
-            "username": "@MaxJmb",
-            "date": "Aug 24",
-            "text": "apple entering the foldable market is a big step and I’m all in for it",
-            "link": "/MaxJmb/status/1959717705218724232#m"
-          },
-          "media": [],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "markgurman",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/markgurman/status/1959717192758706516#m",
-          "tweet_id": "1959717192758706516",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "Mark Gurman",
-          "username": "@markgurman",
-          "date": "Aug 24",
-          "full_date": "Aug 24, 2025 · 8:39 PM UTC",
-          "text": "Apple’s first foldable phone will be book-style, use Touch ID not Face ID, use a C2 modem, have four total cameras and only use eSIM. The screen’s crease is less visible than current foldables. Recently, Apple changed display from on-cell to in-cell touch.bloomberg.com/news/newslette…",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "markgurman",
-          "importance_score": 7,
-          "importance_reason": "Company keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
         }
       ],
-      "filtered_out_count": 1,
+      "filtered_out_count": 0,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -404,12 +245,12 @@
     {
       "handle": "TechCrunch",
       "url": "http://127.0.0.1:8080/TechCrunch",
-      "scrape_timestamp": "2025-09-01 23:07:34",
-      "tweets_count": 7,
+      "scrape_timestamp": "2025-09-12 11:27:58",
+      "tweets_count": 3,
       "new_tweets_count": 0,
-      "skipped_tweets_count": 13,
+      "skipped_tweets_count": 17,
       "tweets": [],
-      "filtered_out_count": 7,
+      "filtered_out_count": 3,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -420,12 +261,12 @@
     {
       "handle": "FT",
       "url": "http://127.0.0.1:8080/FT",
-      "scrape_timestamp": "2025-09-01 23:07:35",
-      "tweets_count": 7,
+      "scrape_timestamp": "2025-09-12 11:27:59",
+      "tweets_count": 1,
       "new_tweets_count": 0,
-      "skipped_tweets_count": 14,
+      "skipped_tweets_count": 20,
       "tweets": [],
-      "filtered_out_count": 7,
+      "filtered_out_count": 1,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
@@ -436,11 +277,33 @@
     {
       "handle": "JustinWolfers",
       "url": "http://127.0.0.1:8080/JustinWolfers",
-      "scrape_timestamp": "2025-09-01 23:07:36",
-      "tweets_count": 1,
-      "new_tweets_count": 0,
-      "skipped_tweets_count": 19,
-      "tweets": [],
+      "scrape_timestamp": "2025-09-12 11:28:00",
+      "tweets_count": 2,
+      "new_tweets_count": 1,
+      "skipped_tweets_count": 18,
+      "tweets": [
+        {
+          "tweet_url": "/JustinWolfers/status/1965560004800573711#m",
+          "tweet_id": "1965560004800573711",
+          "is_retweet": false,
+          "is_pinned": false,
+          "author": "Justin Wolfers",
+          "username": "@JustinWolfers",
+          "date": "Sep 9",
+          "full_date": "Sep 9, 2025 · 11:36 PM UTC",
+          "urls": [
+            "https://www.abc.net.au/about/media-centre/press-releases/2025-abc-boyer-lecture-series-examines-australia-as-a-radical-ex/105753920"
+          ],
+          "text": "Here's a link to the announcement: abc.net.au/about/media-centr…",
+          "quoted_tweet": null,
+          "media": [],
+          "stats": {},
+          "handle": "JustinWolfers",
+          "importance_score": 8,
+          "importance_reason": "High priority keyword (AI not available - using keywords)",
+          "ai_provider": "gpt"
+        }
+      ],
       "filtered_out_count": 1,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
@@ -450,293 +313,112 @@
       }
     },
     {
-      "handle": "AP_Politics",
-      "url": "http://127.0.0.1:8080/AP_Politics",
-      "scrape_timestamp": "2025-09-01 23:07:37",
-      "tweets_count": 3,
-      "new_tweets_count": 3,
-      "skipped_tweets_count": 17,
-      "tweets": [
-        {
-          "tweet_url": "/AP_Politics/status/1884393677390234085#m",
-          "tweet_id": "1884393677390234085",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "AP Politics",
-          "username": "@AP_Politics",
-          "date": "Jan 29",
-          "full_date": "Jan 29, 2025 · 12:10 AM UTC",
-          "text": "BREAKING: Randy Fine wins Republican nomination for U.S. House in Florida's 6th Congressional District special primary election.#APRaceCallat 7:09 p.m. EST.apnews.com/hub/election-2024",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {},
-          "handle": "AP_Politics",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/AP_Politics/status/1859423977568969138#m",
-          "tweet_id": "1859423977568969138",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "AP Politics",
-          "username": "@AP_Politics",
-          "date": "21 Nov 2024",
-          "full_date": "Nov 21, 2024 · 2:29 AM UTC",
-          "text": "BREAKING: Republican Nick Begich wins election to U.S. House in Alaska's at-large Congressional District, beating incumbent Mary Peltola.#APRaceCallat 9:28 p.m. EST.apnews.com/hub/election-2024",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {},
-          "handle": "AP_Politics",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        },
-        {
-          "tweet_url": "/AP_Politics/status/1857584864259670215#m",
-          "tweet_id": "1857584864259670215",
-          "is_retweet": false,
-          "is_pinned": false,
-          "author": "AP Politics",
-          "username": "@AP_Politics",
-          "date": "16 Nov 2024",
-          "full_date": "Nov 16, 2024 · 12:41 AM UTC",
-          "text": "BREAKING: Democrat Josh Harder wins reelection to U.S. House in California's 9th Congressional District.#APRaceCallat 7:40 p.m. EST.apnews.com/hub/election-2024",
-          "quoted_tweet": null,
-          "media": [],
-          "stats": {
-            "likes": ""
-          },
-          "handle": "AP_Politics",
-          "importance_score": 8,
-          "importance_reason": "High priority keyword (AI not available - using keywords)",
-          "ai_provider": "gpt"
-        }
-      ],
-      "filtered_out_count": 0,
+      "handle": "Reuters",
+      "url": "http://127.0.0.1:8080/Reuters",
+      "scrape_timestamp": "2025-09-12 11:28:01",
+      "tweets_count": 1,
+      "new_tweets_count": 0,
+      "skipped_tweets_count": 20,
+      "tweets": [],
+      "filtered_out_count": 1,
       "ai_classification_enabled": true,
       "ai_provider": "gpt",
       "handle_config": {
         "min_score": 8,
-        "context": "AP_Politics"
+        "context": "Reuters"
       }
     }
   ],
   "combined_tweets": [
     {
-      "tweet_url": "/pmarca/status/1902724994607570975#m",
-      "tweet_id": "1902724994607570975",
+      "tweet_url": "/JustinWolfers/status/1965560004800573711#m",
+      "tweet_id": "1965560004800573711",
       "is_retweet": false,
-      "is_pinned": true,
-      "author": "Marc Andreessen 🇺🇸",
-      "username": "@pmarca",
-      "date": "Mar 20",
-      "full_date": "Mar 20, 2025 · 2:12 PM UTC",
-      "text": "THAT'S RIGHT.",
-      "quoted_tweet": null,
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/ext_tw_video_thumb%2F1902724959589253120%2Fpu%2Fimg%2FEf8KguO1P_C8NyaT.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        },
-        {
-          "type": "video",
-          "thumbnail": "/pic/ext_tw_video_thumb%2F1902724959589253120%2Fpu%2Fimg%2FEf8KguO1P_C8NyaT.jpg%3Fname%3Dsmall%26format%3Dwebp"
-        }
+      "is_pinned": false,
+      "author": "Justin Wolfers",
+      "username": "@JustinWolfers",
+      "date": "Sep 9",
+      "full_date": "Sep 9, 2025 · 11:36 PM UTC",
+      "urls": [
+        "https://www.abc.net.au/about/media-centre/press-releases/2025-abc-boyer-lecture-series-examines-australia-as-a-radical-ex/105753920"
       ],
-      "stats": {
-        "retweets": "",
-        "likes": ""
-      },
-      "handle": "pmarca",
-      "importance_score": 9,
-      "importance_reason": "Pinned tweet (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/markgurman/status/1959618085012570179#m",
-      "tweet_id": "1959618085012570179",
-      "is_retweet": false,
-      "is_pinned": true,
-      "author": "Mark Gurman",
-      "username": "@markgurman",
-      "date": "Aug 24",
-      "full_date": "Aug 24, 2025 · 2:05 PM UTC",
-      "text": "Power On: Apple is set to kick off three-year plan to reinvent the iPhone, including three major new models in a row: the iPhone Air, foldable iPhone and 20th anniversary iPhone.bloomberg.com/news/newslette…",
+      "text": "Here's a link to the announcement: abc.net.au/about/media-centr…",
       "quoted_tweet": null,
       "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "markgurman",
-      "importance_score": 9,
-      "importance_reason": "Pinned tweet (AI not available - using keywords)",
+      "stats": {},
+      "handle": "JustinWolfers",
+      "importance_score": 8,
+      "importance_reason": "High priority keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/karpathy/status/1952076108565991588#m",
-      "tweet_id": "1952076108565991588",
+      "tweet_url": "/karpathy/status/1965439123252281654#m",
+      "tweet_id": "1965439123252281654",
       "is_retweet": false,
       "is_pinned": false,
       "author": "Andrej Karpathy",
       "username": "@karpathy",
-      "date": "Aug 3",
-      "full_date": "Aug 3, 2025 · 6:36 PM UTC",
-      "text": "Shower of thoughts: Instead of keeping your Twitter/𝕏 payout, direct it towards a \"PayoutChallenge\" of your choosing - anything you want more of in the world!\n\nHere is mine for this round, combining my last 3 payouts of $5478.51:\n\nIt is imperative that humanity not fall while AI ascends. Humanity has to continue to rise, become better alongside. Create something that is specifically designed to uplift team human. Definition intentionally left a bit vague to keep some entropy around people's interpretation, but imo examples include:\n- Any piece of software that aids explanation, visualization, memorization, inspiration, understanding, coordination, etc...\n- It doesn't have to be too lofty, e.g. it can be a specific educational article/video explaining something some other people could benefit from or that you have unique knowledge of.\n- Prompts/agents for explanation, e.g. along the lines of recently released ChatGPT study mode.\n- Related works of art\n\nThis challenge will run for 2 weeks until Aug 17th EOD PST. Submit your contribution as a reply. It has to be something that was uniquely created for this challenge and would not exist otherwise. Criteria includes execution, leverage, novelty, inspiration, aesthetics, amusement. People can upvote submissions by liking, this \"people's choice\" will also be a factor. I will decide the winner on Aug 17th and send $5478.51 :)",
+      "date": "Sep 9",
+      "full_date": "Sep 9, 2025 · 3:36 PM UTC",
+      "urls": [],
+      "text": "Bit silly but I still watch the Apple event livestream for new iPhones, every year since the first one in 2007. It doesn't make sense but it's ok. Livestream today at 10am (in 1.5 hours). This year, crossing my fingers again for an iPhone mini that I know won't come. rip.",
       "quoted_tweet": null,
       "media": [],
       "stats": {
         "likes": ""
       },
       "handle": "karpathy",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
+      "importance_score": 7,
+      "importance_reason": "Company keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/karpathy/status/1945979830740435186#m",
-      "tweet_id": "1945979830740435186",
+      "tweet_url": "/karpathy/status/1944435412489171119#m",
+      "tweet_id": "1944435412489171119",
       "is_retweet": false,
       "is_pinned": false,
       "author": "Andrej Karpathy",
       "username": "@karpathy",
-      "date": "Jul 17",
-      "full_date": "Jul 17, 2025 · 10:52 PM UTC",
-      "text": "Diffusion video models but now - **realtime**!\n\nSimple video filters are real-time but can only do basic re-coloring and styles. Video diffusion models (Veo and friends) are magic, but they take many seconds/minutes to generate. MirageLSD is real-time magic. Unlike simple video filters, diffusion models actually *understand* what they are looking at, so they can style all parts of the feed intelligently (e.g. putting hats on heads, or light sabers into hands, etc.). And they are arbitrarily steerable, e.g. by text prompts.\n\nCustomizable, intelligent video filters unlock many cool ideas over time:\n- transform camera feeds into alternate realities\n- direct and shoot your own movies, acting out scenes with props. Realtime => instant feedback/review.\n- vibe code games around just simple spheres/blocks, then use a real-time diffusion model to texture your game to make it beautiful.\n- style and customize any video feed: games, videos, ... e.g. Skyrim but \"MORE EPIC\"? DOOM II but modern Unreal Engine quality with just a prompt? Horror movie but \"cute, pink and bunnies only\"? I don't know!\n- zoom call backgrounds+++\n- real-time try on clothes virtually\n- glasses: e.g. cartoonify your vision in real time?\n- we can now build Harry Potter Mirror of Erised, showing the \"raw feed\" of you in the mirror but augmented with your deepest desires (as inferred by the AI).\n- I don't know, I'm probably missing the biggest one, so many things!\n\n(Disclosure I am (very small) angel investor in Decart, I was excited because imo this technology will get very good very fast and it feels general, powerful but it's also technically very difficult. Congrats on the launch to the team!)",
-      "quoted_tweet": {
-        "author": "Decart",
-        "username": "@DecartAI",
-        "date": "Jul 17",
-        "text": "Introducing MirageLSD: The First Live-Stream Diffusion (LSD) AI Model\n\nInput any video stream, from a camera or video chat to a computer screen or game, and transform it into any world you desire, in real-time (<40ms latency).\n\nHere’s how it works (w/ demo you can use!):",
-        "link": "/DecartAI/status/1945947692871692667#m"
-      },
-      "media": [
-        {
-          "type": "image",
-          "src": "/pic/amplify_video_thumb%2F1945947630892470273%2Fimg%2FtMWGyDcoT3KmQg0U.jpg%3Fname%3Dsmall%26format%3Dwebp",
-          "alt": ""
-        },
-        {
-          "type": "video",
-          "thumbnail": "/pic/amplify_video_thumb%2F1945947630892470273%2Fimg%2FtMWGyDcoT3KmQg0U.jpg%3Fname%3Dsmall%26format%3Dwebp"
-        }
-      ],
+      "date": "Jul 13",
+      "full_date": "Jul 13, 2025 · 4:35 PM UTC",
+      "urls": [],
+      "text": "Scaling up RL is all the rage right now, I had a chat with a friend about it yesterday. I'm fairly certain RL will continue to yield more intermediate gains, but I also don't expect it to be the full story. RL is basically \"hey this happened to go well (/poorly), let me slightly increase (/decrease) the probability of every action I took for the future\". You get a lot more leverage from verifier functions than explicit supervision, this is great. But first, it looks suspicious asymptotically - once the tasks grow to be minutes/hours of interaction long, you're really going to do all that work just to learn a single scalar outcome at the very end, to directly weight the gradient? Beyond asymptotics and second, this doesn't feel like the human mechanism of improvement for majority of intelligence tasks. There's significantly more bits of supervision we extract per rollout via a review/reflect stage along the lines of \"what went well? what didn't go so well? what should I try next time?\" etc. and the lessons from this stage feel explicit, like a new string to be added to the system prompt for the future, optionally to be distilled into weights (/intuition) later a bit like sleep. In English, we say something becomes \"second nature\" via this process, and we're missing learning paradigms like this. The new Memory feature is maybe a primordial version of this in ChatGPT, though it is only used for customization not problem solving. Notice that there is no equivalent of this for e.g. Atari RL because there are no LLMs and no in-context learning in those domains. \n\nExample algorithm: given a task, do a few rollouts, stuff them all into one context window (along with the reward in each case), use a meta-prompt to review/reflect on what went well or not to obtain string \"lesson\", to be added to system prompt (or more generally modify the current lessons database). Many blanks to fill in, many tweaks possible, not obvious.\n\nExample of lesson: we know LLMs can't super easily see letters due to tokenization and can't super easily count inside the residual stream, hence 'r' in 'strawberry' being famously difficult. Claude system prompt had a \"quick fix\" patch - a string was added along the lines of \"If the user asks you to count letters, first separate them by commas and increment an explicit counter each time and do the task like that\". This string is the \"lesson\", explicitly instructing the model how to complete the counting task, except the question is how this might fall out from agentic practice, instead of it being hard-coded by an engineer, how can this be generalized, and how lessons can be distilled over time to not bloat context windows indefinitely.\n\nTLDR: RL will lead to more gains because when done well, it is a lot more leveraged, bitter-lesson-pilled, and superior to SFT. It doesn't feel like the full story, especially as rollout lengths continue to expand. There are more S curves to find beyond, possibly specific to LLMs and without analogues in game/robotics-like environments, which is exciting.",
+      "quoted_tweet": null,
+      "media": [],
       "stats": {
         "likes": ""
       },
       "handle": "karpathy",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
+      "importance_score": 7,
+      "importance_reason": "Company keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/markgurman/status/1959718122367463501#m",
-      "tweet_id": "1959718122367463501",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Mark Gurman",
-      "username": "@markgurman",
-      "date": "Aug 24",
-      "full_date": "Aug 24, 2025 · 8:43 PM UTC",
-      "text": "It’s going to be the most exciting Apple launch for tech fans in many, many years if you ask me.",
-      "quoted_tweet": {
-        "author": "Max Jambor",
-        "username": "@MaxJmb",
-        "date": "Aug 24",
-        "text": "apple entering the foldable market is a big step and I’m all in for it",
-        "link": "/MaxJmb/status/1959717705218724232#m"
-      },
-      "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "markgurman",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/AP_Politics/status/1884393677390234085#m",
-      "tweet_id": "1884393677390234085",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "AP Politics",
-      "username": "@AP_Politics",
-      "date": "Jan 29",
-      "full_date": "Jan 29, 2025 · 12:10 AM UTC",
-      "text": "BREAKING: Randy Fine wins Republican nomination for U.S. House in Florida's 6th Congressional District special primary election.#APRaceCallat 7:09 p.m. EST.apnews.com/hub/election-2024",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {},
-      "handle": "AP_Politics",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/AP_Politics/status/1859423977568969138#m",
-      "tweet_id": "1859423977568969138",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "AP Politics",
-      "username": "@AP_Politics",
-      "date": "21 Nov 2024",
-      "full_date": "Nov 21, 2024 · 2:29 AM UTC",
-      "text": "BREAKING: Republican Nick Begich wins election to U.S. House in Alaska's at-large Congressional District, beating incumbent Mary Peltola.#APRaceCallat 9:28 p.m. EST.apnews.com/hub/election-2024",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {},
-      "handle": "AP_Politics",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/AP_Politics/status/1857584864259670215#m",
-      "tweet_id": "1857584864259670215",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "AP Politics",
-      "username": "@AP_Politics",
-      "date": "16 Nov 2024",
-      "full_date": "Nov 16, 2024 · 12:41 AM UTC",
-      "text": "BREAKING: Democrat Josh Harder wins reelection to U.S. House in California's 9th Congressional District.#APRaceCallat 7:40 p.m. EST.apnews.com/hub/election-2024",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "AP_Politics",
-      "importance_score": 8,
-      "importance_reason": "High priority keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/AndrewYNg/status/1953097967361245251#m",
-      "tweet_id": "1953097967361245251",
+      "tweet_url": "/AndrewYNg/status/1960731961494004077#m",
+      "tweet_id": "1960731961494004077",
       "is_retweet": false,
       "is_pinned": false,
       "author": "Andrew Ng",
       "username": "@AndrewYNg",
-      "date": "Aug 6",
-      "full_date": "Aug 6, 2025 · 2:16 PM UTC",
-      "text": "I'm thrilled to announce the definitive course on Claude Code, created with@AnthropicAIand taught by Elie Schoppik@eschoppik. If you want to use highly agentic coding - where AI works autonomously for many minutes or longer, not just completing code snippets - this is it.\n\nClaude Code has been a game-changer for many developers (including me!), but there's real depth to using it well. This comprehensive course covers everything from fundamentals to advanced patterns.\n\nAfter this short course, you'll be able to:\n- Orchestrate multiple Claude subagents to work on different parts of your codebase simultaneously\n- Tag Claude in GitHub issues and have it autonomously create, review, and merge pull requests\n- Transform messy Jupyter notebooks into clean, production-ready dashboards\n- Use MCP tools like Playwright so Claude can see what's wrong with your UI and fix it autonomously\n\nWhether you're new to Claude Code or already using it, you'll discover powerful capabilities that can fundamentally change how you build software.\n\nI'm very excited about what agentic coding lets everyone now do. Please take this course!deeplearning.ai/short-course…",
+      "date": "Aug 27",
+      "full_date": "Aug 27, 2025 · 3:51 PM UTC",
+      "urls": [
+        "https://www.deeplearning.ai/short-courses/agentic-knowledge-graph-construction"
+      ],
+      "text": "Build better RAG by letting a team of agents extract and connect your reference materials into a knowledge graph. Our new short course, “Agentic Knowledge Graph Construction,” taught by @Neo4j Innovation Lead @akollegger , shows you how.\n\nKnowledge graphs are an important way to store information accurately but they are a lot of work to build manually.\n\nIn this course you’ll learn how to build a team of agents that turn data– in this case product reviews and invoices from suppliers–into structured graphs of entities and relationships for RAG.\n\nLearn how agents can automatically handle the time-consuming work of building graphs — extracting entities and relationships (e.g., Product \"contains\" Assembly, Part \"supplied_by\" Supplier, Customer review \"mentions\" Product), deduplicating them, fact-checking them, and committing them to a graph database — so your retrieval system can find right information to generate accurate output. For example, you can use agents to help trace customer complaints directly to specific suppliers, manufacturing processes, and product hierarchies, thus turning fragmented information into queryable business intelligence.\n\nSkills you’ll gain:\n- Build, store, and access knowledge graphs using the Neo4j graph database\n- Build multi-agent systems using Google’s Agent Development Kit (ADK)\n- Set up a loop of agentic workflows to propose and refine a graph schema through fact-checking\n- Connect agent-generated graphs of unstructured and structured data into a unified knowledge graph\n\nThis course gets into the practicum of why knowledge graphs give more accurate information retrieval than vector search alone, especially for high-stakes applications where precision matters more than fuzzy similarity matching.\n\nSign up here: deeplearning.ai/short-course…",
       "quoted_tweet": null,
       "media": [
         {
           "type": "image",
-          "src": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp",
+          "src": "/pic/amplify_video_thumb%2F1960731242825179143%2Fimg%2Fp8H-0qyI9wF9zCLx.jpg%3Fname%3Dsmall%26format%3Dwebp",
           "alt": ""
         },
         {
           "type": "video",
-          "thumbnail": "/pic/amplify_video_thumb%2F1953096801189560320%2Fimg%2Fy1OsH-ypHzIpWtjR.jpg%3Fname%3Dsmall%26format%3Dwebp"
+          "thumbnail": "/pic/amplify_video_thumb%2F1960731242825179143%2Fimg%2Fp8H-0qyI9wF9zCLx.jpg%3Fname%3Dsmall%26format%3Dwebp"
         }
       ],
       "stats": {
-        "retweets": "",
         "likes": ""
       },
       "handle": "AndrewYNg",
@@ -745,100 +427,31 @@
       "ai_provider": "gpt"
     },
     {
-      "tweet_url": "/markgurman/status/1959999529052516763#m",
-      "tweet_id": "1959999529052516763",
+      "tweet_url": "/markgurman/status/1965510494531584375#m",
+      "tweet_id": "1965510494531584375",
       "is_retweet": false,
       "is_pinned": false,
       "author": "Mark Gurman",
       "username": "@markgurman",
-      "date": "Aug 25",
-      "full_date": "Aug 25, 2025 · 3:21 PM UTC",
-      "text": "Elon Musk sues Apple and OpenAIbloomberg.com/news/articles/…",
-      "quoted_tweet": {
-        "author": "Mark Gurman",
-        "username": "@markgurman",
-        "date": "Aug 12",
-        "text": "Apple on@elonmusk’s claims: \"The App Store is designed to be fair and free of bias. We feature thousands of apps through charts, algorithmic recommendations, and curated lists selected by experts using objective criteria.”bloomberg.com/news/articles/…",
-        "link": "/markgurman/status/1955383759853007198#m"
-      },
+      "date": "Sep 9",
+      "full_date": "Sep 9, 2025 · 8:19 PM UTC",
+      "urls": [
+        "https://www.bloomberg.com/news/articles/2025-09-09/apple-debuts-airpods-pro-3-with-heart-rate-monitor-better-fit?srnd=undefined&embedded-checkout=true"
+      ],
+      "text": "Apple Inc. introduced its first new AirPods Pro model in three years, adding new health-tracking features, live translation capabilities, improved noise cancellation and a better fit. bloomberg.com/news/articles/…",
+      "quoted_tweet": null,
       "media": [],
       "stats": {},
       "handle": "markgurman",
       "importance_score": 7,
       "importance_reason": "Company keyword (AI not available - using keywords)",
       "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/markgurman/status/1959717192758706516#m",
-      "tweet_id": "1959717192758706516",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Mark Gurman",
-      "username": "@markgurman",
-      "date": "Aug 24",
-      "full_date": "Aug 24, 2025 · 8:39 PM UTC",
-      "text": "Apple’s first foldable phone will be book-style, use Touch ID not Face ID, use a C2 modem, have four total cameras and only use eSIM. The screen’s crease is less visible than current foldables. Recently, Apple changed display from on-cell to in-cell touch.bloomberg.com/news/newslette…",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "markgurman",
-      "importance_score": 7,
-      "importance_reason": "Company keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1959703967694545296#m",
-      "tweet_id": "1959703967694545296",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Aug 24",
-      "full_date": "Aug 24, 2025 · 7:46 PM UTC",
-      "text": "Continuing the journey of optimal LLM-assisted coding experience. In particular, I find that instead of narrowing in on a perfect one thing my usage is increasingly diversifying across a few workflows that I \"stitch up\" the pros/cons of:\n\nPersonally the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete. This is because I find that writing concrete chunks of code/comments myself and in the right part of the code is a high bandwidth way of communicating \"task specification\" to the LLM, i.e. it's primarily about task specification bits - it takes too many bits and too much latency to communicate what I want in text, and it's faster to just demonstrate it in the code and in the right place. Sometimes the tab complete model is annoying so I toggle it on/off a lot.\n\nNext layer up is highlighting a concrete chunk of code and asking for some kind of a modification.\n\nNext layer up is Claude Code / Codex / etc, running on the side of Cursor, which I go to for larger chunks of functionality that are also fairly easy to specify in a prompt. These are super helpful, but still mixed overall and slightly frustrating at times. I don't run in YOLO mode because they can go off-track and do dumb things you didn't want/need and I ESC fairly often. I also haven't learned to be productive using more than one instance in parallel - one already feels hard enough. I haven't figured out a good way to keep CLAUDE[.]md good or up to date. I often have to do a pass of \"cleanups\" for coding style, or matters of code taste. E.g. they are too defensive and often over-use try/catch statements, they often over-complicate abstractions, they overbloat code (e.g. a nested if-the-else constructs when a list comprehension or a one-liner if-then-else would work), or they duplicate code chunks instead of creating a nice helper function, things like that... they basically don't have a sense of taste. They are indispensable in cases where I inch into a more vibe-coding territory where I'm less familiar (e.g. writing some rust recently, or sql commands, or anything else I've done less of before). I also tried CC to teach me things alongside the code it was writing but that didn't work at all - it really wants to just write code a lot more than it wants to explain anything along the way. I tried to get CC to do hyperparameter tuning, which was highly amusing. They are also super helpful in all kinds of lower-stakes one-off custom visualization or utilities or debugging code that I would never write otherwise because it would have taken way too long. E.g. CC can hammer out 1,000 lines of one-off extensive visualization/code just to identify a specific bug, which gets all deleted right after we find it. It's the code post-scarcity era - you can just create and then delete thousands of lines of super custom, super ephemeral code now, it's ok, it's not this precious costly thing anymore.\n\nFinal layer of defense is GPT5 Pro, which I go to for the hardest things. E.g. it has happened to me a few times now that I / Cursor / CC are all stuck on a bug for 10 minutes, but when I copy paste the whole thing to 5 Pro, it goes off for 10 minutes but then actually finds a really subtle bug. It is very strong. It can dig up all kinds of esoteric docs and papers and such. I've also used it for other meatier tasks, e.g. suggestions on how to clean up abstractions (mixed results, sometimes good ideas but not all), or an entire literature review around how people do this or that and it comes back with good relevant resources / pointers.\n\nAnyway, coding feels completely blown open with possibility across a number of \"kinds\" of coding and then a number of tools with their pros/cons. It's hard to avoid the feeling of anxiety around not being at the frontier of what is collectively possible, hence random sunday shower of thoughts and a good amount of curiosity about what others are finding.",
-      "quoted_tweet": null,
-      "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "karpathy",
-      "importance_score": 6,
-      "importance_reason": "Tech keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
-    },
-    {
-      "tweet_url": "/karpathy/status/1943411187296686448#m",
-      "tweet_id": "1943411187296686448",
-      "is_retweet": false,
-      "is_pinned": false,
-      "author": "Andrej Karpathy",
-      "username": "@karpathy",
-      "date": "Jul 10",
-      "full_date": "Jul 10, 2025 · 8:45 PM UTC",
-      "text": "I often rant about how 99% of attention is about to be LLM attention instead of human attention. What does a research paper look like for an LLM instead of a human? It’s definitely not a pdf. There is huge space for an extremely valuable “research app” that figures this out.",
-      "quoted_tweet": {
-        "author": "Michael Levin",
-        "username": "@drmichaellevin",
-        "date": "Jul 10",
-        "text": "I'm constantly irritated that I don't have time to read the torrent of cool papers coming faster and faster from amazing people in relevant fields.  Other scientists have the same issue and have no time to read most of my lengthy conceptual papers either.  So whom are we writing these papers for?\n\nI guess, at least until they fall in to the same issue from their own work, AI's will be the only ones who actually have the bandwidth to read all this stuff.  I'm not specifically talking about today's language models - let's assume we mean whatever inevitable AI shows up, that is able to read the literature and have impact on the research (whether by talking to humans or by running lab automation/robot scientist platforms).\n\nSo then: how should we be writing, knowing that a lot of our audience will be AI (plus cyborgs, hybrots, augmented humans, etc.)?  Maybe it's too early to know what to do, but we better start thinking about it because assuming our audience will always be today's humans seems untenable. Taking seriously the idea that someday the impactful audience will be very different, and that the things we write now are in some sense a training set for truly diverse future beings, how does our writing change? or does it?\n\nwhat say you@danfaggella@mpshanahan@Plinz@blaiseaguera?",
-        "link": "/drmichaellevin/status/1943321140128030753#m"
-      },
-      "media": [],
-      "stats": {
-        "likes": ""
-      },
-      "handle": "karpathy",
-      "importance_score": 6,
-      "importance_reason": "Tech keyword (AI not available - using keywords)",
-      "ai_provider": "gpt"
     }
   ],
   "stats": {
     "total_handles": 12,
     "successful_handles": 12,
-    "total_important_tweets": 13,
-    "total_filtered_tweets": 46
+    "total_important_tweets": 5,
+    "total_filtered_tweets": 8
   }
 }

@@ -145,11 +145,11 @@ Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
                 continue
                 
             body += f"""
-{'='*50}
-@{handle.upper()} ({len(tweets)} important tweets)
-{'='*50}
+                    {'='*50}
+                    @{handle.upper()} ({len(tweets)} important tweets)
+                    {'='*50}
 
-"""
+                    """
             sorted_tweets = sorted(tweets, key=lambda x: x.get('importance_score', 0), reverse=True)
             
             for i, tweet in enumerate(sorted_tweets):
@@ -158,20 +158,22 @@ Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
                 author = tweet.get('author', 'Unknown')
                 date = tweet.get('full_date') or tweet.get('date') or 'Unknown date'
                 text = tweet.get('text', 'No text available')
+                urls = tweet.get('urls', [])
                 
                 body += f"""
-{i+1}. [{score}/10] {reason}
-   Author: {author}
-   Date: {date}
-   Text: {text[:1000]}{'...' if len(text) > 1000 else ''}
-
-"""
+                    {i+1}. [{score}/10] {reason}
+                    Author: {author}
+                    Date: {date}
+                    Text: {text[:1000]}{'...' if len(text) > 1000 else ''}
+                    """
+                if urls:
+                    body += f"URLs: {', '.join(urls)}\n"
         
         body += """
---
-AI Twitter Scraper - Batch Notification
-Configure notification settings in email_notifier.py
-"""
+                --
+                AI Twitter Scraper - Batch Notification
+                Configure notification settings in email_notifier.py
+                """
         
         return body
     
